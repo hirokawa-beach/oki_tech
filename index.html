@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>技術局 | wplaceの創作活動を技術で支える</title>
+    <meta
+      name="description"
+      content="技術局は、wplaceに関わるWebサイト、Discord Bot、各種ツールを開発し、沖ノ鳥島開発をはじめとする多様な創作活動を支援する技術集団です。"
+    />
+    <link
+      rel="preload"
+      href="./assets/images/okinotorishima_wplace.gif"
+      as="image"
+      type="image/gif"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="site-menu"
+      aria-label="メニューを開く"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="menu-backdrop" data-menu-close hidden></div>
+
+    <aside class="site-menu" id="site-menu" aria-label="サイトメニュー" hidden>
+      <div class="site-menu__inner">
+        <div class="site-menu__header">
+          <p class="site-menu__eyebrow">Menu</p>
+          <button class="site-menu__close" type="button" data-menu-close aria-label="メニューを閉じる">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav class="site-menu__nav">
+          <a href="./">Top</a>
+          <a href="./about/">About</a>
+          <a href="./product/">Products</a>
+          <a href="./project/">Projects</a>
+          <a href="./news/">News</a>
+          <a href="./member/">Members</a>
+          <a href="./contact/">Contact</a>
+        </nav>
+
+        <div class="site-menu__panel">
+          <p class="site-menu__label">技術局</p>
+          <p class="site-menu__text">
+            wplaceに関わるWebサイト、Discord Bot、各種ツールを開発し、創作活動を支えるための導線です。
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <img
+          class="hero__image"
+          src="./assets/images/okinotorishima_wplace.gif"
+          alt="wplace上の広域マップを使ったメインビジュアル"
+        />
+        <div class="hero__overlay"></div>
+
+        <div class="hero__content">
+          <div class="hero__panel">
+            <p class="hero__eyebrow">TECHNICAL BUREAU FOR WPLACE</p>
+            <h1 id="hero-title">
+              wplaceの創作活動を<br />
+              技術で支える
+            </h1>
+            <p class="hero__lead">
+              技術局は、wplaceに関わるWebサイト、Discord Bot、各種ツールを開発し、<br />
+              沖ノ鳥島開発をはじめとする多様な創作活動を支援する技術集団です。
+            </p>
+
+            <ul class="hero__tags" aria-label="技術局の支援領域">
+              <li>Web Site</li>
+              <li>Discord Bot</li>
+              <li>Creative Tools</li>
+            </ul>
+
+            <div class="hero__actions">
+              <a class="button button--primary" href="#build">活動を見る</a>
+              <a class="button button--ghost" href="./contact/">お問い合わせ</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--intro" id="build">
+        <div class="section__heading">
+          <p class="section__eyebrow">What We Build</p>
+          <h2>創作の前線を支えるための技術をつくる</h2>
+        </div>
+
+        <div class="card-grid card-grid--three">
+          <article class="card">
+            <p class="card__eyebrow">01</p>
+            <h3>Webサイト</h3>
+            <p>
+              企画の入口になるトップページや案内ページ、情報整理のためのサイトを設計し、活動の見え方を整えます。
+            </p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">02</p>
+            <h3>Discord Bot</h3>
+            <p>
+              コミュニティの運営や情報共有、作業導線を支えるBotを整備し、創作の流れを止めない仕組みをつくります。
+            </p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">03</p>
+            <h3>各種ツール</h3>
+            <p>
+              制作補助、可視化、データ整理など、創作を前に進めるための支援ツールを開発して、実務を下支えします。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--feature" id="focus">
+        <div class="feature">
+          <div class="feature__content">
+            <p class="section__eyebrow">Main Project</p>
+            <h2>沖ノ鳥島開発を、技術局の象徴的な取り組みとして。</h2>
+            <p>
+              沖ノ鳥島開発は、技術局がどのように創作活動を支えるのかを象徴するプロジェクトです。情報の整理、導線の設計、コミュニティ支援、制作補助までを横断しながら、wplace上の表現を前に進めていきます。
+            </p>
+            <a class="button button--primary" href="./project/">プロジェクトを見る</a>
+          </div>
+
+          <div class="feature__stats" aria-label="技術局の活動イメージ">
+            <div class="metric">
+              <span class="metric__label">Support</span>
+              <strong>創作導線の設計</strong>
+            </div>
+            <div class="metric">
+              <span class="metric__label">Systems</span>
+              <strong>Bot / Site / Tool</strong>
+            </div>
+            <div class="metric">
+              <span class="metric__label">Focus</span>
+              <strong>wplace x Okinotorishima</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--hub" id="sections">
+        <div class="section__heading">
+          <p class="section__eyebrow">Site Map</p>
+          <h2>このサイトの主な入口</h2>
+        </div>
+
+        <div class="link-grid">
+          <a class="link-card" href="./about/">
+            <span class="link-card__label">About</span>
+            <strong>技術局について</strong>
+            <p>活動方針や、このサイトをつくる背景をまとめるためのページです。</p>
+          </a>
+
+          <a class="link-card" href="./product/">
+            <span class="link-card__label">Products</span>
+            <strong>制作物一覧</strong>
+            <p>サイト、サービス、データベースなどの提供物を整理して掲載します。</p>
+          </a>
+
+          <a class="link-card" href="./project/">
+            <span class="link-card__label">Projects</span>
+            <strong>進行中の活動</strong>
+            <p>沖ノ鳥島開発をはじめとした具体的な取り組みを紹介します。</p>
+          </a>
+
+          <a class="link-card" href="./news/">
+            <span class="link-card__label">News</span>
+            <strong>更新情報</strong>
+            <p>リリース、お知らせ、開発進捗などを時系列で出していく想定です。</p>
+          </a>
+
+          <a class="link-card" href="./member/">
+            <span class="link-card__label">Members</span>
+            <strong>メンバー</strong>
+            <p>技術局を支える人たちや役割を掲載するための入口です。</p>
+          </a>
+
+          <a class="link-card" href="./contact/">
+            <span class="link-card__label">Contact</span>
+            <strong>相談・連絡</strong>
+            <p>問い合わせ、連携相談、参加導線などを受けるためのページです。</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section section--news">
+        <div class="section__heading">
+          <p class="section__eyebrow">News Preview</p>
+          <h2>更新情報のひな形</h2>
+        </div>
+
+        <div class="news-list">
+          <article class="news-item">
+            <time datetime="2026-04-22">2026.04.22</time>
+            <h3>トップページのひな形を公開しました</h3>
+            <p>今後ここに更新情報や活動ログを掲載していく想定です。</p>
+          </article>
+
+          <article class="news-item">
+            <time datetime="2026-04-22">2026.04.22</time>
+            <h3>Products / Projects ページを準備中です</h3>
+            <p>制作物や取り組みを順次整理して、各ページへ展開できるようにします。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--cta">
+        <div class="cta">
+          <div>
+            <p class="section__eyebrow">Join / Contact</p>
+            <h2>技術で支えたいことがあれば、ここからつながる。</h2>
+          </div>
+          <a class="button button--primary" href="./contact/">お問い合わせへ</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© Wplace沖ノ鳥島開発 技術局</p>
+    </footer>
+  </body>
+</html>
