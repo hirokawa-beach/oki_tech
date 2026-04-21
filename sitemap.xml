@@ -10,9 +10,6 @@
     <loc>https://tech.wplaceoki.com/contact/</loc>
   </url>
   <url>
-    <loc>https://tech.wplaceoki.com/database/</loc>
-  </url>
-  <url>
     <loc>https://tech.wplaceoki.com/member/</loc>
   </url>
   <url>
@@ -26,6 +23,9 @@
   </url>
   <url>
     <loc>https://tech.wplaceoki.com/product/site/</loc>
+  </url>
+    <url>
+    <loc>https://tech.wplaceoki.com/product/database/</loc>
   </url>
   <url>
     <loc>https://tech.wplaceoki.com/project/</loc>
