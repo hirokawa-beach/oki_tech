@@ -6,6 +6,10 @@ category: site
 repository: https://github.com/hirokawa-beach/OkiMAP
 public_url: https://okimap.wplaceoki.com/
 
+公式サイトURL:
+
+https://okimap.wplaceoki.com/
+
 ## アーカイブ範囲
 
 OkiMAP は、2025年8月19日からの沖ノ鳥島周辺のアーカイブを閲覧できます。

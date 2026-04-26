@@ -6,6 +6,10 @@ category: site
 repository: https://github.com/hirokawa-beach/OkiMAP
 public_url: https://okimap.wplaceoki.com/
 
+公式サイトURL:
+
+https://okimap.wplaceoki.com/
+
 ## 設定パネル
 
 設定パネルは、画面左側の歯車ボタンから開きます。

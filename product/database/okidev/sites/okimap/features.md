@@ -6,6 +6,10 @@ category: site
 repository: https://github.com/hirokawa-beach/OkiMAP
 public_url: https://okimap.wplaceoki.com/
 
+公式サイトURL:
+
+https://okimap.wplaceoki.com/
+
 ## オーバーレイ
 
 OkiMAP では、拡大したときにピクセルの色を見やすくするため、画像の上に色を重ねて表示できます。

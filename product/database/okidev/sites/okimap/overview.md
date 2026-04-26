@@ -10,7 +10,7 @@ public_url: https://okimap.wplaceoki.com/
 
 OkiMAP は、wplace での沖ノ鳥島周辺の変化を日付ごとに閲覧できるアーカイブマップサイトです。
 
-公開URL:
+公式サイトURL:
 
 https://okimap.wplaceoki.com/
 

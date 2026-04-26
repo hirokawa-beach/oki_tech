@@ -10,7 +10,7 @@ public_url: https://rc-tools.wplaceoki.com/paintCalc
 
 ペイント量計算ツールは、2地点の wplace URL から距離差分を計算し、道路敷設に必要なペイント量を見積もるツールです。
 
-公開URL:
+ページURL:
 
 https://rc-tools.wplaceoki.com/paintCalc
 

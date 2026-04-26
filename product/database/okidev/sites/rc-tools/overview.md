@@ -10,7 +10,7 @@ public_url: https://rc-tools.wplaceoki.com/
 
 RC Tools は、wplace の道路敷設や地図反映作業を効率化するための支援ツール集です。
 
-公開URL:
+公式サイトURL:
 
 https://rc-tools.wplaceoki.com/
 
