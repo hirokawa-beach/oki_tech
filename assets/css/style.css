@@ -149,9 +149,10 @@ body[data-menu-open="true"] .menu-toggle span:nth-child(3) {
 .site-menu__inner {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
   height: 100%;
   padding: 1.25rem;
+  overflow-y: auto;
   border-left: 1px solid var(--line);
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(247, 249, 253, 0.96)),
@@ -225,7 +226,7 @@ body[data-menu-open="true"] .site-menu__inner {
 }
 
 .site-menu__panel {
-  margin-top: auto;
+  margin-top: 15px;
   padding: 1.2rem;
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
