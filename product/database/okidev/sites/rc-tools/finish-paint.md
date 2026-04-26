@@ -10,6 +10,8 @@ public_url: https://rc-tools.wplaceoki.com/finishPaint
 
 完成予定日計算は、2つの日付と残りペイント数から、完成予定日や進捗速度を推定するツールです。
 
+このツールは、道路公社ツールサイトで提供されています。
+
 ページURL:
 
 https://rc-tools.wplaceoki.com/finishPaint

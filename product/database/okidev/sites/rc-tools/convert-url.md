@@ -10,6 +10,8 @@ public_url: https://rc-tools.wplaceoki.com/ConvertUrl
 
 道路地図URL変換ツールは、wplace 道路地図の URL と現地 wplace URL を相互に変換するツールです。
 
+このツールは、道路公社ツールサイトで提供されています。
+
 ページURL:
 
 https://rc-tools.wplaceoki.com/ConvertUrl

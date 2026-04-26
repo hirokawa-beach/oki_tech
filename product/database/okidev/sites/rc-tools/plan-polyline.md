@@ -10,6 +10,8 @@ public_url: https://rc-tools.wplaceoki.com/planPolyline
 
 折れ線プランナーは、wplace 上の始点URLと終点URLから、道路の折れ点と傾きを計算するツールです。
 
+このツールは、道路公社ツールサイトで提供されています。
+
 ページURL:
 
 https://rc-tools.wplaceoki.com/planPolyline

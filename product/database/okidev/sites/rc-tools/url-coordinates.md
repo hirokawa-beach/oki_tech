@@ -10,6 +10,8 @@ public_url: https://rc-tools.wplaceoki.com/urlCoordinates
 
 URL座標変換ツールは、wplace URL から複数の座標形式を確認するためのツールです。
 
+このツールは、道路公社ツールサイトで提供されています。
+
 ページURL:
 
 https://rc-tools.wplaceoki.com/urlCoordinates
