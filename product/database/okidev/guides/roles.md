@@ -12,7 +12,7 @@ category: guide
 
 入手方法:
 
-[verify](https://discord.com/channels/1405845560413651026/1413506180667543562)で認証を受けることで入手可能。
+[verify](https://discord.com/channels/1405845560413651026/1433180821367554189)で認証を受けることで入手可能。
 
 ### 主任、部長ロール
 
