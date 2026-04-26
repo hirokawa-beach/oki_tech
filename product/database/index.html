@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Database | 技術局</title>
+    <meta
+      name="description"
+      content="技術局がAI SearchやDiscord Botの参照元として使う公開データベースです。okidev、wiki、wplace関連の資料を整理して掲載します。"
+    />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <script src="../../assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="site-menu"
+      aria-label="メニューを開く"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="menu-backdrop" data-menu-close hidden></div>
+
+    <aside class="site-menu" id="site-menu" aria-label="サイトメニュー" hidden>
+      <div class="site-menu__inner">
+        <div class="site-menu__header">
+          <p class="site-menu__eyebrow">Menu</p>
+          <button class="site-menu__close" type="button" data-menu-close aria-label="メニューを閉じる">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav class="site-menu__nav">
+          <a href="../../">Top</a>
+          <a href="../../about/">About</a>
+          <a href="../">Products</a>
+          <a href="../../project/">Projects</a>
+          <a href="../../news/">News</a>
+          <a href="../../member/">Members</a>
+          <a href="../../contact/">Contact</a>
+        </nav>
+
+        <div class="site-menu__panel">
+          <p class="site-menu__label">Database</p>
+          <p class="site-menu__text">
+            Gemma4 AI Search と公開参照元リンクで使う資料置き場です。
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="section section--intro">
+        <div class="section__heading">
+          <p class="section__eyebrow">Database</p>
+          <h1>AI Search が参照する公開資料</h1>
+          <p>
+            R2 と同じ key 構成で資料を置き、Gemma4 の回答末尾に出る参照元リンクから直接確認できるようにしています。
+          </p>
+        </div>
+
+        <div class="card-grid card-grid--three">
+          <article class="card">
+            <p class="card__eyebrow">okidev</p>
+            <h3>Bot / 規約 / 運用資料</h3>
+            <p>沖ノ鳥島開発botやサーバー規約など、okidev固有の情報を置きます。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">wiki</p>
+            <h3>Wiki本文</h3>
+            <p>道路一覧や各種Wikiページなど、あとから追加する本文資料の置き場です。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">wplace</p>
+            <h3>wplace関連資料</h3>
+            <p>wplaceのガイドラインやルール確認用の資料を置きます。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">okidev</p>
+          <h2>Bot と規約</h2>
+        </div>
+
+        <div class="link-grid">
+          <a class="link-card" href="./okidev/bots/kita-radar/overview.md">
+            <span class="link-card__label">Bot</span>
+            <strong>kita-radar overview</strong>
+            <p>kita-radar bot の概要資料です。</p>
+          </a>
+
+          <a class="link-card" href="./okidev/bots/okidev/overview.md">
+            <span class="link-card__label">Bot</span>
+            <strong>okidev overview</strong>
+            <p>沖ノ鳥島開発bot全体の概要資料です。</p>
+          </a>
+
+          <a class="link-card" href="./okidev/bots/okidev/gemma4-command.md">
+            <span class="link-card__label">Gemma4</span>
+            <strong>gemma4-command</strong>
+            <p>/gemma4 コマンドの使い方と挙動です。</p>
+          </a>
+
+          <a class="link-card" href="./okidev/bots/okidev/overlay-forge.md">
+            <span class="link-card__label">Overlay</span>
+            <strong>overlay-forge</strong>
+            <p>/make overlay の仕様と使い方です。</p>
+          </a>
+
+          <a class="link-card" href="./okidev/rules/rules-00.md">
+            <span class="link-card__label">Rules</span>
+            <strong>rules-00</strong>
+            <p>規約の前文・全体説明です。</p>
+          </a>
+
+          <a class="link-card" href="./okidev/rules/rules-01.md">
+            <span class="link-card__label">Rules</span>
+            <strong>rules-01</strong>
+            <p>第1条に対応する規約本文です。</p>
+          </a>
+
+          <a class="link-card" href="./okidev/rules/rules-02.md">
+            <span class="link-card__label">Rules</span>
+            <strong>rules-02</strong>
+            <p>第2条「開発について」に対応する規約本文です。</p>
+          </a>
+
+          <a class="link-card" href="./okidev/rules/rules-02-commentary.md">
+            <span class="link-card__label">Rules</span>
+            <strong>rules-02-commentary</strong>
+            <p>第2条の補足解説です。</p>
+          </a>
+
+          <a class="link-card" href="./okidev/rules/rules-03.md">
+            <span class="link-card__label">Rules</span>
+            <strong>rules-03</strong>
+            <p>第3条に対応する規約本文です。</p>
+          </a>
+
+          <a class="link-card" href="./okidev/rules/rules-04.md">
+            <span class="link-card__label">Rules</span>
+            <strong>rules-04</strong>
+            <p>第4条に対応する規約本文です。</p>
+          </a>
+
+          <a class="link-card" href="./okidev/rules/rules-05.md">
+            <span class="link-card__label">Rules</span>
+            <strong>rules-05</strong>
+            <p>第5条に対応する規約本文です。</p>
+          </a>
+
+          <a class="link-card" href="./okidev/rules/rules-06.md">
+            <span class="link-card__label">Rules</span>
+            <strong>rules-06</strong>
+            <p>第6条に対応する規約本文です。</p>
+          </a>
+
+          <a class="link-card" href="./okidev/rules/history.md">
+            <span class="link-card__label">Rules</span>
+            <strong>history</strong>
+            <p>規約更新履歴です。</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">wplace</p>
+          <h2>wplace ガイドライン</h2>
+        </div>
+
+        <div class="link-grid">
+          <a class="link-card" href="./wplace/rules/community-guidelines-00.md">
+            <span class="link-card__label">Guidelines</span>
+            <strong>community-guidelines-00</strong>
+            <p>wplace Community Guidelines のAI Search向け資料です。</p>
+          </a>
+
+          <a class="link-card" href="./wplace/rules/community-guidelines-01.md">
+            <span class="link-card__label">Guidelines</span>
+            <strong>community-guidelines-01</strong>
+            <p>wplace Community Guidelines のAI Search向け資料です。</p>
+          </a>
+
+          <a class="link-card" href="./wplace/rules/community-guidelines-02.md">
+            <span class="link-card__label">Guidelines</span>
+            <strong>community-guidelines-02</strong>
+            <p>wplace Community Guidelines のAI Search向け資料です。</p>
+          </a>
+
+          <a class="link-card" href="./wplace/rules/community-guidelines-03.md">
+            <span class="link-card__label">Guidelines</span>
+            <strong>community-guidelines-03</strong>
+            <p>wplace Community Guidelines のAI Search向け資料です。</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section section--cta">
+        <div class="cta">
+          <div>
+            <p class="section__eyebrow">R2 Key Policy</p>
+            <h2>公開URLとAI Searchのkeyを一致させる。</h2>
+            <p>
+              例: <code>okidev/rules/rules-02.md</code> は
+              <code>https://tech.wplaceoki.com/product/database/okidev/rules/rules-02.md</code>
+              として参照できます。
+            </p>
+          </div>
+          <a class="button button--primary" href="../">Productsへ</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© Wplace沖ノ鳥島開発 技術局</p>
+    </footer>
+  </body>
+</html>
