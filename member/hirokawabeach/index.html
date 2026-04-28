@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ひろかわびーち | Members | 技術局</title>
+    <meta
+      name="description"
+      content="ひろかわびーちの自己紹介ページです。アーカイブサービス, Oki Archive Bot, OkiMAPなどを紹介します。"
+    />
+    <link
+      rel="preload"
+      href="../../assets/images/beach.png"
+      as="image"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <script src="../../assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="site-menu"
+      aria-label="メニューを開く"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="menu-backdrop" data-menu-close hidden></div>
+
+    <aside class="site-menu" id="site-menu" aria-label="サイトメニュー" hidden>
+      <div class="site-menu__inner">
+        <div class="site-menu__header">
+          <p class="site-menu__eyebrow">Menu</p>
+          <button class="site-menu__close" type="button" data-menu-close aria-label="メニューを閉じる">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav class="site-menu__nav">
+          <a href="../../">Top</a>
+          <a href="../../about/">About</a>
+          <a href="../../product/">Products</a>
+          <a href="../../project/">Projects</a>
+          <a href="../">Members</a>
+          <a href="../../news/">News</a>
+          <a href="../../contact/">Contact</a>
+        </nav>
+
+        <div class="site-menu__panel">
+          <p class="site-menu__label">ひろかわびーち</p>
+          <p class="site-menu__text">
+            技術局主任です。アーカイブ関連の業務を中心に活動しています。
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="section section--intro" aria-labelledby="member-title">
+        <div class="member-profile">
+          <div class="member-profile__media">
+            <img
+              class="member-avatar"
+              src="../../assets/images/beach.png"
+              alt="ひろかわびーちのプロフィール画像"
+            />
+          </div>
+
+          <div class="member-profile__content">
+            <p class="section__eyebrow">Member Profile</p>
+            <h1 id="member-title">ひろかわびーち</h1>
+            <p>
+              技術局主任。Oki Archive Bot等のアーカイブ関連業務を中心に活動しています。
+            </p>
+
+            <ul class="member-profile__tags" aria-label="担当領域">
+              <li>Archive System</li>
+              <li>Discord Bot</li>
+              <li>Websites</li>
+              <li>Home Server</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--intro">
+        <div class="section__heading section__heading--member-about">
+          <p class="section__eyebrow">About</p>
+          <h2 class="member-section-title">Raspberry Piを駆使し、<span>その一瞬を確実に</span></h2>
+        </div>
+
+        <div class="card-grid card-grid--three">
+          <article class="card">
+            <p class="card__eyebrow">Bot</p>
+            <h3>各Webサイト</h3>
+            <p>
+              取得したアーカイブをより簡単に・素早く閲覧できるように、OkiMAPやOkiCAM等の便利なWebサイトを運用しています。
+            </p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Bot</p>
+            <h3>Oki Archive Bot</h3>
+            <p>
+              2025年8月上旬から、1時間ごとに取得し続けているアーカイブ画像をDiscordに配信します。自宅のRaspberry Piから動作させることで、安定化と保全性の向上を図っています。
+            </p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Infra</p>
+            <h3>Home Server</h3>
+            <p>
+              自宅のRaspberry Piを活用し、Wplaceの情報収集や巨大作品の進捗状況などの他のメンバーが作成したBotの運用環境を提供しています。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--feature">
+        <div class="feature">
+          <div class="feature__content">
+            <p class="section__eyebrow">Systems</p>
+            <h2>アーカイブという要を守る</h2>
+            <p>
+              とにかくラズパイ。しみじみラズパイ。アーカイブの取得から配信まで、ラズパイを中心にシステムを構築しています。安定性と保全性を重視しています。
+            </p>
+            <p>
+              一番得意なPythonでのコーディングがほとんどです。手が届くところに運用環境があるという強みを活かして、沖ノ鳥島を支えています。
+            </p>
+          </div>
+
+          <div class="feature__stats" aria-label="運用領域">
+            <div class="metric">
+              <span class="metric__label">Devices</span>
+              <strong>Raspberry Pi 5 / 3B+</strong>
+            </div>
+            <div class="metric">
+              <span class="metric__label">Fetch</span>
+              <strong>Wplaceからの画像の自動取得</strong>
+            </div>
+            <div class="metric">
+              <span class="metric__label">Local</span>
+              <strong>Archive Bot, OkiMAPの画像配信</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Works</p>
+          <h2>主な制作物</h2>
+        </div>
+
+        <div class="link-grid">
+          <a class="link-card" href="https://okimap.wplaceoki.com/">
+            <span class="link-card__label">Site</span>
+            <strong>OkiMAP</strong>
+            <p>アーカイブ公開サイト。タイル単位ではなく、結合された一枚地図で閲覧できます。更新が遅延気味です。</p>
+          </a>
+
+          <a class="link-card" href="../../product/database/okidev/bots/oki-archive/overview.md">
+            <span class="link-card__label">Bot</span>
+            <strong>Oki Archive Bot</strong>
+            <p>沖ノ鳥島開発サーバー内で使われる、アーカイブ画像の呼び出し・差分生成などが可能なBotです。</p>
+          </a>
+
+          <a class="link-card" href="">
+            <span class="link-card__label">Program</span>
+            <strong>アーカイブ取得システム</strong>
+            <p>沖ノ鳥島・南鳥島周辺及び指定された地域の画像を一定時間ごとに取得・保存しています。ラズパイで動作しています。</p>
+          </a>
+
+          <a class="link-card" href="">
+            <span class="link-card__label">Site</span>
+            <strong>OkiCAM</strong>
+            <p>沖ノ鳥島の主要地域の差分が閲覧できるサイトです(更新停止中・開発終了)</p>
+          </a>
+
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Links</p>
+          <h2>リンク・連絡先</h2>
+        </div>
+
+        <div class="contact-card">
+          <a class="contact-row" href="https://github.com/hirokawa-beach/">
+            <span class="contact-row__label">GitHub</span>
+            <strong>hirokawa-beach</strong>
+            <p>GitHub のプロフィールです。パブリックリポジトリや活動履歴を確認できます。</p>
+          </a>
+
+          <a class="contact-row" href="https://x.com/Hirokawa_beach">
+            <span class="contact-row__label">X (Twitter)</span>
+            <strong>@Hirokawa_beach</strong>
+            <p>X (Twitter) のプロフィールです。最新の投稿を確認できます。DMからの連絡も可能です。</p>
+          </a>
+
+          <a class="contact-row" href="mailto:hirokawa_beach.tech@wplaceoki.com">
+            <span class="contact-row__label">Contact</span>
+            <strong>hirokawa_beach.tech@wplaceoki.com</strong>
+            <p>OkiMail(ultimate氏のメールサービス)で発行した連絡用メールアドレスです。</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© Wplace沖ノ鳥島開発 技術局</p>
+    </footer>
+  </body>
+</html>

@@ -271,10 +271,8 @@ body[data-menu-open=true] .site-menu__inner {
 .hero__image {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center top;
-     object-position: center top;
+  object-fit: cover;
+  object-position: center top;
 }
 .hero__overlay {
   background: linear-gradient(180deg, rgba(22, 28, 36, 0.1) 0%, rgba(24, 32, 40, 0.14) 24%, rgba(31, 43, 55, 0.46) 100%), radial-gradient(ellipse at 50% 54%, rgba(16, 20, 27, 0.4) 0%, rgba(18, 24, 31, 0.24) 30%, rgba(20, 29, 38, 0.1) 58%, rgba(20, 29, 38, 0.03) 100%), linear-gradient(90deg, rgba(20, 29, 38, 0.08) 0%, rgba(20, 29, 38, 0.03) 50%, rgba(20, 29, 38, 0.08) 100%);
@@ -335,6 +333,78 @@ body[data-menu-open=true] .site-menu__inner {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 1.7rem;
+}
+
+.member-avatar {
+  width: min(180px, 42vw);
+  aspect-ratio: 1;
+  object-fit: contain;
+  margin: 0;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 18px 46px rgba(15, 23, 42, 0.08);
+}
+
+.member-profile {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: clamp(1.25rem, 4vw, 2rem);
+  align-items: center;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(247, 249, 253, 0.96)), radial-gradient(circle at top right, rgba(10, 132, 255, 0.08), transparent 35%);
+  box-shadow: 0 18px 46px rgba(15, 23, 42, 0.08);
+  padding: clamp(1.35rem, 4vw, 2rem);
+}
+.member-profile__media {
+  display: flex;
+  justify-content: center;
+}
+.member-profile__content {
+  display: grid;
+  gap: 0.8rem;
+}
+.member-profile__content h1 {
+  margin: 0;
+  font-size: clamp(2.1rem, 5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+.member-profile__content p {
+  margin: 0;
+  color: #5a6678;
+}
+.member-profile__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  padding: 0;
+  margin: 0.2rem 0 0;
+  list-style: none;
+}
+.member-profile__tags li {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 999px;
+  background: rgba(10, 132, 255, 0.05);
+  color: #101827;
+  font-size: 0.88rem;
+}
+
+.section__heading .member-section-title {
+  max-width: none;
+  white-space: nowrap;
+  font-size: clamp(1.8rem, 3.45vw, 2.9rem);
+}
+.section__heading .member-section-title span {
+  white-space: nowrap;
+}
+
+.section__heading--member-about {
+  width: min(100%, 68rem);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .button {
@@ -445,6 +515,50 @@ body[data-menu-open=true] .site-menu__inner {
 }
 .card p {
   color: #5a6678;
+}
+
+a.card {
+  display: block;
+}
+a.card:hover, a.card:focus-visible {
+  transform: translateY(-2px);
+}
+
+.contact-card {
+  display: grid;
+  gap: 0;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(247, 249, 253, 0.96)), radial-gradient(circle at top right, rgba(10, 132, 255, 0.08), transparent 35%);
+  box-shadow: 0 18px 46px rgba(15, 23, 42, 0.08);
+  padding: clamp(0.35rem, 2vw, 0.6rem);
+}
+
+.contact-row {
+  display: grid;
+  gap: 0.3rem;
+  padding: clamp(1rem, 3vw, 1.35rem);
+  border-radius: 20px;
+}
+.contact-row:hover, .contact-row:focus-visible {
+  transform: translateY(-2px);
+}
+.contact-row + .contact-row {
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+}
+.contact-row strong {
+  font-size: 1.2rem;
+  overflow-wrap: anywhere;
+}
+.contact-row p {
+  margin: 0;
+  color: #5a6678;
+}
+.contact-row__label {
+  color: #0a84ff;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.74rem;
 }
 
 .feature {
@@ -577,6 +691,9 @@ body[data-menu-open=true] .site-menu__inner {
   .feature {
     grid-template-columns: 1fr;
   }
+  .section__heading .member-section-title {
+    white-space: normal;
+  }
   .hero__panel {
     width: 100%;
   }
@@ -624,6 +741,13 @@ body[data-menu-open=true] .site-menu__inner {
   .hero__panel {
     padding: 1.25rem;
   }
+  .member-profile {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .member-profile__tags {
+    justify-content: center;
+  }
   .hero__actions,
   .cta {
     align-items: stretch;
@@ -645,4 +769,6 @@ body[data-menu-open=true] .site-menu__inner {
     animation: none !important;
     transition: none !important;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -6,7 +6,7 @@
     <title>Database | 技術局</title>
     <meta
       name="description"
-      content="技術局がAI SearchやDiscord Botの参照元として使う公開データベースです。okidev、wiki、wplace関連の資料を整理して掲載します。"
+      content="技術局がAI SearchやDiscord Botの参照元として使う公開データベースです。okidevのBot、規約、サーバー案内、wplace関連資料を整理して掲載します。"
     />
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <script src="../../assets/js/main.js" defer></script>
@@ -73,9 +73,9 @@
           </article>
 
           <article class="card">
-            <p class="card__eyebrow">wiki</p>
-            <h3>Wiki本文</h3>
-            <p>道路一覧や各種Wikiページなど、あとから追加する本文資料の置き場です。</p>
+            <p class="card__eyebrow">guide</p>
+            <h3>サーバー案内</h3>
+            <p>カテゴリー、主要ロール、関連リンクなど、参加者向けの案内資料をまとめます。</p>
           </article>
 
           <article class="card">
@@ -89,7 +89,7 @@
       <section class="section">
         <div class="section__heading">
           <p class="section__eyebrow">okidev</p>
-          <h2>Bot と規約</h2>
+          <h2>Bot 資料</h2>
         </div>
 
         <div class="link-grid">
@@ -99,76 +99,80 @@
             <p>kita-radar bot の概要資料です。</p>
           </a>
 
+          <a class="link-card" href="./okidev/bots/oki-archive/overview.md">
+            <span class="link-card__label">Bot</span>
+            <strong>oki-archive overview</strong>
+            <p>Oki Archive Bot の概要、開発者情報、各種コマンド一覧です。</p>
+          </a>
+
+          <a class="link-card" href="./okidev/bots/okimail/overview.md">
+            <span class="link-card__label">Mail</span>
+            <strong>okimail overview</strong>
+            <p>OkiMail の概要、利用の流れ、コマンド、制限、FAQです。</p>
+          </a>
+
           <a class="link-card" href="./okidev/bots/okidev/overview.md">
             <span class="link-card__label">Bot</span>
             <strong>okidev overview</strong>
-            <p>沖ノ鳥島開発bot全体の概要資料です。</p>
+            <p>沖ノ鳥島開発bot全体、/gemma4、/make overlay の説明です。</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">okidev</p>
+          <h2>サーバー案内</h2>
+        </div>
+
+        <div class="link-grid">
+          <a class="link-card" href="./okidev/guides/guides.md">
+            <span class="link-card__label">Guide</span>
+            <strong>guides</strong>
+            <p>Discordサーバー内の主要カテゴリー、主要ロール、関連リンクをまとめた案内資料です。</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">okidev</p>
+          <h2>サイト・外部ツール</h2>
+        </div>
+
+        <div class="link-grid">
+          <a class="link-card" href="./okidev/sites/rc-tools/overview.md">
+            <span class="link-card__label">Site</span>
+            <strong>rc-tools overview</strong>
+            <p>wplace道路敷設や地図反映を支援する道路公社ツールサイトです。各ツールのリンク、概要、使い方をまとめています。公式サイト: https://rc-tools.wplaceoki.com/</p>
           </a>
 
-          <a class="link-card" href="./okidev/bots/okidev/gemma4-command.md">
-            <span class="link-card__label">Gemma4</span>
-            <strong>gemma4-command</strong>
-            <p>/gemma4 コマンドの使い方と挙動です。</p>
+          <a class="link-card" href="./okidev/sites/okimap/overview.md">
+            <span class="link-card__label">Site</span>
+            <strong>okimap overview</strong>
+            <p>沖ノ鳥島周辺の変化を日付ごとに見られるアーカイブマップです。UI、機能、設定、注意点もまとめています。公式サイト: https://okimap.wplaceoki.com/</p>
           </a>
+        </div>
+      </section>
 
-          <a class="link-card" href="./okidev/bots/okidev/overlay-forge.md">
-            <span class="link-card__label">Overlay</span>
-            <strong>overlay-forge</strong>
-            <p>/make overlay の仕様と使い方です。</p>
-          </a>
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">okidev</p>
+          <h2>サーバー規約</h2>
+        </div>
 
-          <a class="link-card" href="./okidev/rules/rules-00.md">
+        <div class="link-grid">
+
+          <a class="link-card" href="./okidev/rules/rules.md">
             <span class="link-card__label">Rules</span>
-            <strong>rules-00</strong>
-            <p>規約の前文・全体説明です。</p>
+            <strong>rules</strong>
+            <p>Wplace沖ノ鳥島開発ディスコード規約の本文と施行・改正履歴です。</p>
           </a>
 
-          <a class="link-card" href="./okidev/rules/rules-01.md">
+          <a class="link-card" href="./okidev/rules/rules-commentary.md">
             <span class="link-card__label">Rules</span>
-            <strong>rules-01</strong>
-            <p>第1条に対応する規約本文です。</p>
-          </a>
-
-          <a class="link-card" href="./okidev/rules/rules-02.md">
-            <span class="link-card__label">Rules</span>
-            <strong>rules-02</strong>
-            <p>第2条「開発について」に対応する規約本文です。</p>
-          </a>
-
-          <a class="link-card" href="./okidev/rules/rules-02-commentary.md">
-            <span class="link-card__label">Rules</span>
-            <strong>rules-02-commentary</strong>
-            <p>第2条の補足解説です。</p>
-          </a>
-
-          <a class="link-card" href="./okidev/rules/rules-03.md">
-            <span class="link-card__label">Rules</span>
-            <strong>rules-03</strong>
-            <p>第3条に対応する規約本文です。</p>
-          </a>
-
-          <a class="link-card" href="./okidev/rules/rules-04.md">
-            <span class="link-card__label">Rules</span>
-            <strong>rules-04</strong>
-            <p>第4条に対応する規約本文です。</p>
-          </a>
-
-          <a class="link-card" href="./okidev/rules/rules-05.md">
-            <span class="link-card__label">Rules</span>
-            <strong>rules-05</strong>
-            <p>第5条に対応する規約本文です。</p>
-          </a>
-
-          <a class="link-card" href="./okidev/rules/rules-06.md">
-            <span class="link-card__label">Rules</span>
-            <strong>rules-06</strong>
-            <p>第6条に対応する規約本文です。</p>
-          </a>
-
-          <a class="link-card" href="./okidev/rules/history.md">
-            <span class="link-card__label">Rules</span>
-            <strong>history</strong>
-            <p>規約更新履歴です。</p>
+            <strong>rules-commentary</strong>
+            <p>規約全体の補足資料です。現在は第2条の運用補足を含みます。</p>
           </a>
         </div>
       </section>
@@ -180,27 +184,9 @@
         </div>
 
         <div class="link-grid">
-          <a class="link-card" href="./wplace/rules/community-guidelines-00.md">
+          <a class="link-card" href="./wplace/rules/community-guidelines.md">
             <span class="link-card__label">Guidelines</span>
-            <strong>community-guidelines-00</strong>
-            <p>wplace Community Guidelines のAI Search向け資料です。</p>
-          </a>
-
-          <a class="link-card" href="./wplace/rules/community-guidelines-01.md">
-            <span class="link-card__label">Guidelines</span>
-            <strong>community-guidelines-01</strong>
-            <p>wplace Community Guidelines のAI Search向け資料です。</p>
-          </a>
-
-          <a class="link-card" href="./wplace/rules/community-guidelines-02.md">
-            <span class="link-card__label">Guidelines</span>
-            <strong>community-guidelines-02</strong>
-            <p>wplace Community Guidelines のAI Search向け資料です。</p>
-          </a>
-
-          <a class="link-card" href="./wplace/rules/community-guidelines-03.md">
-            <span class="link-card__label">Guidelines</span>
-            <strong>community-guidelines-03</strong>
+            <strong>community-guidelines</strong>
             <p>wplace Community Guidelines のAI Search向け資料です。</p>
           </a>
         </div>
@@ -212,8 +198,8 @@
             <p class="section__eyebrow">R2 Key Policy</p>
             <h2>公開URLとAI Searchのkeyを一致させる。</h2>
             <p>
-              例: <code>okidev/rules/rules-02.md</code> は
-              <code>https://tech.wplaceoki.com/product/database/okidev/rules/rules-02.md</code>
+              例: <code>okidev/rules/rules.md</code> は
+              <code>https://tech.wplaceoki.com/product/database/okidev/rules/rules.md</code>
               として参照できます。
             </p>
           </div>
