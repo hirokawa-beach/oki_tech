@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ultimate_1113 | Members | 技術局</title>
+    <meta
+      name="description"
+      content="ultimate_1113の自己紹介ページです。rc-tools、北レーダーbot、沖ノ鳥島開発bot、OkiMail、wplaceoki.comの運用などを紹介します。"
+    />
+    <link
+      rel="preload"
+      href="../../assets/images/ultimate_1113.png"
+      as="image"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <script src="../../assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="site-menu"
+      aria-label="メニューを開く"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="menu-backdrop" data-menu-close hidden></div>
+
+    <aside class="site-menu" id="site-menu" aria-label="サイトメニュー" hidden>
+      <div class="site-menu__inner">
+        <div class="site-menu__header">
+          <p class="site-menu__eyebrow">Menu</p>
+          <button class="site-menu__close" type="button" data-menu-close aria-label="メニューを閉じる">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav class="site-menu__nav">
+          <a href="../../">Top</a>
+          <a href="../../about/">About</a>
+          <a href="../../product/">Products</a>
+          <a href="../../project/">Projects</a>
+          <a href="../">Members</a>
+          <a href="../../news/">News</a>
+          <a href="../../contact/">Contact</a>
+        </nav>
+
+        <div class="site-menu__panel">
+          <p class="site-menu__label">ultimate_1113</p>
+          <p class="site-menu__text">
+            道路公社主任として活動しながら、技術局の制作・運用にも関わっています。
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="section section--intro" aria-labelledby="member-title">
+        <div class="member-profile">
+          <div class="member-profile__media">
+            <img
+              class="member-avatar"
+              src="../../assets/images/ultimate_1113.png"
+              alt="ultimate_1113のプロフィール画像"
+            />
+          </div>
+
+          <div class="member-profile__content">
+            <p class="section__eyebrow">Member Profile</p>
+            <h1 id="member-title">ultimate_1113</h1>
+            <p>
+              道路公社主任として活動しながら、技術局のページやBot、ツール、ドメイン運用を支えています。
+            </p>
+
+            <ul class="member-profile__tags" aria-label="担当領域">
+              <li>Road Corporation</li>
+              <li>Discord Bot</li>
+              <li>Cloudflare Workers</li>
+              <li>Domain / Tunnel</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--intro">
+        <div class="section__heading section__heading--member-about">
+          <p class="section__eyebrow">About</p>
+          <h2 class="member-section-title">道路公社主任の視点を活かし、<span>技術局で開発を担う</span></h2>
+        </div>
+
+        <div class="card-grid card-grid--three">
+          <a class="card" href="https://rc-tools.wplaceoki.com/">
+            <p class="card__eyebrow">Tools</p>
+            <h3>道路公社ツールサイト</h3>
+            <p>
+              rc-tools は、道路公社の作業を支援するためのツールサイトです。URL変換、座標確認、折れ線計画、ペイント量計算、完成予定日の推定などを扱います。
+            </p>
+          </a>
+
+          <article class="card">
+            <p class="card__eyebrow">Bots</p>
+            <h3>Discord Bot</h3>
+            <p>
+              北レーダーbot、沖ノ鳥島開発bot、OkiMail を制作しています。安定運用だけでなく、内容変更のしやすさも見ながら、ローカル実行と Cloudflare Workers を使い分けています。
+            </p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Infra</p>
+            <h3>wplaceoki.com</h3>
+            <p>
+              wplaceoki.com を所有し、GitHub Pages、Cloudflare Tunnel、OkiMail のメールアドレス発行、Minecraft サーバー向けの NS 移譲など、ドメインとサブドメインの運用も行っています。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--feature">
+        <div class="feature">
+          <div class="feature__content">
+            <p class="section__eyebrow">Systems</p>
+            <h2>Cloudflare を中心に開発</h2>
+            <p>
+              北レーダーbotは、内容変更のしやすさや小回りを重視してローカル環境で実行しています。一方で、rc-tools、沖ノ鳥島開発bot、OkiMail などは Cloudflare Workers を使って構築しています。
+            </p>
+            <p>
+              wplaceoki.com のドメインは、OkiMail のメールアドレス発行にも使っています。サブドメインは、GitHub Pages の公開先として使うだけでなく、Cloudflare Tunnel や、Aternos の Minecraft サーバーへ移譲する用途にも使っています。
+            </p>
+          </div>
+
+          <div class="feature__stats" aria-label="運用領域">
+            <div class="metric">
+              <span class="metric__label">Domain</span>
+              <strong>wplaceoki.com</strong>
+            </div>
+            <div class="metric">
+              <span class="metric__label">Runtime</span>
+              <strong>Cloudflare Workers</strong>
+            </div>
+            <div class="metric">
+              <span class="metric__label">Local</span>
+              <strong>北レーダーbot</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Works</p>
+          <h2>主な制作物</h2>
+        </div>
+
+        <div class="link-grid">
+          <a class="link-card" href="https://rc-tools.wplaceoki.com/">
+            <span class="link-card__label">Site</span>
+            <strong>rc-tools</strong>
+            <p>道路公社ツールサイト。道路敷設や地図反映に使う各種計算・変換ツールを提供しています。</p>
+          </a>
+
+          <a class="link-card" href="../../product/database/okidev/bots/kita-radar/overview.md">
+            <span class="link-card__label">Bot</span>
+            <strong>北レーダーbot</strong>
+            <p>沖ノ鳥島開発サーバー内で使われる、北に関する発言へ反応するBotです。</p>
+          </a>
+
+          <a class="link-card" href="../../product/database/okidev/bots/okidev/overview.md">
+            <span class="link-card__label">Bot</span>
+            <strong>沖ノ鳥島開発bot</strong>
+            <p>Gemma4 や Overlay Forge など、制作やDiscord内での情報整理を補助する機能を提供します。</p>
+          </a>
+
+          <a class="link-card" href="../../product/database/okidev/bots/okimail/overview.md">
+            <span class="link-card__label">Bot</span>
+            <strong>OkiMail</strong>
+            <p>発行したメールアドレスに届いたメールを Discord の DM に転送するBotです。</p>
+          </a>
+
+          <a class="link-card" href="https://okimap.wplaceoki.com/">
+            <span class="link-card__label">Support</span>
+            <strong>OkiMAP 支援</strong>
+            <p>
+              アーカイブ画像配信に Cloudflare Tunnel を使うなど画像配信周りを支援し、コードレビューや軽量化の面でも協力しました。
+            </p>
+          </a>
+
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Links</p>
+          <h2>リンク・連絡先</h2>
+        </div>
+
+        <div class="contact-card">
+          <a class="contact-row" href="https://github.com/ultimate-1113/">
+            <span class="contact-row__label">GitHub</span>
+            <strong>ultimate-1113</strong>
+            <p>GitHub のプロフィールです。公開しているリポジトリや活動履歴を確認できます。</p>
+          </a>
+
+          <a class="contact-row" href="mailto:ultimate_1113.tech@wplaceoki.com">
+            <span class="contact-row__label">Contact</span>
+            <strong>ultimate_1113.tech@wplaceoki.com</strong>
+            <p>OkiMail で発行している連絡用メールアドレスです。</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© Wplace沖ノ鳥島開発 技術局</p>
+    </footer>
+  </body>
+</html>
