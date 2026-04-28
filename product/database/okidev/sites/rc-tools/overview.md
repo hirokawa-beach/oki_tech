@@ -24,11 +24,19 @@ https://github.com/ultimate-1113/wplace-tools
 
 ## 提供されているツール
 
-- 道路地図URL変換ツール
-- URL座標変換ツール
-- 折れ線プランナー
-- ペイント量計算ツール
-- 完成予定日計算
+- 道路地図URL変換ツール: https://rc-tools.wplaceoki.com/ConvertUrl
+- URL座標変換ツール: https://rc-tools.wplaceoki.com/urlCoordinates
+- 折れ線プランナー: https://rc-tools.wplaceoki.com/planPolyline
+- ペイント量計算ツール: https://rc-tools.wplaceoki.com/paintCalc
+- 完成予定日計算: https://rc-tools.wplaceoki.com/finishPaint
+
+## 関連資料
+
+- 道路地図URL変換ツール: `okidev/sites/rc-tools/convert-url.md`
+- URL座標変換ツール: `okidev/sites/rc-tools/url-coordinates.md`
+- 折れ線プランナー: `okidev/sites/rc-tools/plan-polyline.md`
+- ペイント量計算ツール: `okidev/sites/rc-tools/paint-calc.md`
+- 完成予定日計算: `okidev/sites/rc-tools/finish-paint.md`
 
 ## 想定用途
 
