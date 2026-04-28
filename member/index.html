@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Members | 技術局</title>
+    <meta
+      name="description"
+      content="技術局に関わるメンバーの自己紹介と担当領域を掲載するページです。"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="../assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="site-menu"
+      aria-label="メニューを開く"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="menu-backdrop" data-menu-close hidden></div>
+
+    <aside class="site-menu" id="site-menu" aria-label="サイトメニュー" hidden>
+      <div class="site-menu__inner">
+        <div class="site-menu__header">
+          <p class="site-menu__eyebrow">Menu</p>
+          <button class="site-menu__close" type="button" data-menu-close aria-label="メニューを閉じる">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav class="site-menu__nav">
+          <a href="../">Top</a>
+          <a href="../about/">About</a>
+          <a href="../product/">Products</a>
+          <a href="../project/">Projects</a>
+          <a href="../news/">News</a>
+          <a href="./">Members</a>
+          <a href="../contact/">Contact</a>
+        </nav>
+
+        <div class="site-menu__panel">
+          <p class="site-menu__label">Members</p>
+          <p class="site-menu__text">
+            技術局に関わる人たちの担当領域と制作物をまとめています。
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="section section--intro">
+        <div class="section__heading">
+          <p class="section__eyebrow">Members</p>
+          <h1>技術局に関わるメンバー</h1>
+          <p>
+            Webサイト、Discord Bot、インフラ、各種ツールなど、沖ノ鳥島開発を支える制作や運用に関わるメンバーを掲載しています。
+          </p>
+        </div>
+
+        <div class="link-grid">
+          <a class="link-card" href="./ultimate_1113/">
+            <span class="link-card__label">Member</span>
+            <strong>ultimate_1113</strong>
+            <p>
+              道路公社主任として活動しながら、技術局の制作・運用にも関わるメンバーです。
+            </p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© Wplace沖ノ鳥島開発 技術局</p>
+    </footer>
+  </body>
+</html>
