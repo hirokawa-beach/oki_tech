@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service | 技術局</title>
+    <meta
+      name="description"
+      content="技術局が運用するDiscord Botやサービス、運用補助の仕組みをまとめるページです。"
+    />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <script src="../../assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="menu-backdrop" data-menu-close hidden></div>
+
+    <aside class="site-menu" id="site-menu" aria-label="サイトメニュー" hidden>
+      <div class="site-menu__inner">
+        <div class="site-menu__header">
+          <p class="site-menu__eyebrow">Menu</p>
+          <button class="site-menu__close" type="button" data-menu-close aria-label="メニューを閉じる">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav class="site-menu__nav">
+          <a href="../../">Top</a>
+          <a href="../../about/">About</a>
+          <a href="../">Products</a>
+          <a href="../../project/">Projects</a>
+          <a href="../../news/">News</a>
+          <a href="../../member/">Members</a>
+          <a href="../../contact/">Contact</a>
+        </nav>
+
+        <div class="site-menu__panel">
+          <p class="site-menu__label">Service</p>
+          <p class="site-menu__text">
+            Discord Botや運用補助の仕組みをまとめるためのページです。
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="section section--intro">
+        <div class="section__heading">
+          <p class="section__eyebrow">Service</p>
+          <h1>運用を支えるサービスとBot</h1>
+          <p>
+            コミュニティ運営、情報共有、制作補助に使うサービスを整理します。正式な紹介ページができるまで、役割ごとの雛形として配置しています。
+          </p>
+        </div>
+
+        <div class="card-grid card-grid--three">
+          <article class="card">
+            <p class="card__eyebrow">Bot</p>
+            <h3>Discord Bot</h3>
+            <p>通知、検索、案内、記録など、サーバー内で動く補助機能をまとめます。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Search</p>
+            <h3>資料検索</h3>
+            <p>ルール、ガイド、関連資料を探しやすくする検索・参照の仕組みを扱います。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Ops</p>
+            <h3>運用補助</h3>
+            <p>更新確認、共有、作業の記録など、日々の管理を支える仕組みを置きます。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Related</p>
+          <h2>関連資料</h2>
+        </div>
+
+        <div class="link-grid">
+          <a class="link-card" href="../database/">
+            <span class="link-card__label">Database</span>
+            <strong>参照資料データベース</strong>
+            <p>Botや検索機能が参照する資料の整理場所です。</p>
+          </a>
+
+          <a class="link-card" href="../../contact/">
+            <span class="link-card__label">Contact</span>
+            <strong>サービス相談</strong>
+            <p>新しいBotや運用補助の相談はこちらから行える想定です。</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© Wplace沖ノ鳥島開発 技術局</p>
+    </footer>
+  </body>
+</html>

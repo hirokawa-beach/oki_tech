@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | 技術局</title>
+    <meta
+      name="description"
+      content="技術局への問い合わせ、連携相談、参加相談の入口をまとめたページです。"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="../assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="menu-backdrop" data-menu-close hidden></div>
+
+    <aside class="site-menu" id="site-menu" aria-label="サイトメニュー" hidden>
+      <div class="site-menu__inner">
+        <div class="site-menu__header">
+          <p class="site-menu__eyebrow">Menu</p>
+          <button class="site-menu__close" type="button" data-menu-close aria-label="メニューを閉じる">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav class="site-menu__nav">
+          <a href="../">Top</a>
+          <a href="../about/">About</a>
+          <a href="../product/">Products</a>
+          <a href="../project/">Projects</a>
+          <a href="../news/">News</a>
+          <a href="../member/">Members</a>
+          <a href="./">Contact</a>
+        </nav>
+
+        <div class="site-menu__panel">
+          <p class="site-menu__label">Contact</p>
+          <p class="site-menu__text">
+            制作、運用、資料整理、参加に関する相談の入口です。
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="section section--intro">
+        <div class="section__heading">
+          <p class="section__eyebrow">Contact</p>
+          <h1>相談したい内容に近い入口からどうぞ</h1>
+          <p>
+            技術局への問い合わせ、連携相談、参加相談を受け付けるための仮ページです。正式なフォームや外部リンクは、運用方法が決まり次第追加します。
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <a class="contact-row" href="../product/">
+            <span class="link-card__label">Production</span>
+            <strong>制作物に関する相談</strong>
+            <p>サイト、Bot、データベース、補助ツールについての相談はこちらの導線を使います。</p>
+          </a>
+
+          <a class="contact-row" href="../project/">
+            <span class="link-card__label">Project</span>
+            <strong>プロジェクト連携</strong>
+            <p>wplace沖ノ鳥島開発に関する技術支援や情報整理の相談を想定しています。</p>
+          </a>
+
+          <a class="contact-row" href="../member/">
+            <span class="link-card__label">Join</span>
+            <strong>参加・協力の相談</strong>
+            <p>開発、デザイン、資料整理など、関われる領域を確認するための入口です。</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© Wplace沖ノ鳥島開発 技術局</p>
+    </footer>
+  </body>
+</html>
