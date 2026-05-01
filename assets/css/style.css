@@ -431,6 +431,20 @@ body[data-menu-open=true] .site-menu__inner {
   color: #ffffff;
 }
 
+.site-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 0.25rem;
+}
+.site-actions .button--ghost {
+  border-color: rgba(10, 132, 255, 0.2);
+  background: rgba(10, 132, 255, 0.06);
+  color: #0071e3;
+}
+
 .cta {
   display: flex;
   flex-direction: column;
@@ -497,6 +511,9 @@ body[data-menu-open=true] .site-menu__inner {
 .card-grid {
   display: grid;
   gap: 1rem;
+}
+.card-grid + .card-grid {
+  margin-top: 1rem;
 }
 .card-grid--three {
   grid-template-columns: repeat(3, minmax(0, 1fr));
