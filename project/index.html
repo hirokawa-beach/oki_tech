@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | 技術局</title>
+    <meta
+      name="description"
+      content="技術局が関わるプロジェクト、進行中の取り組み、技術支援の領域をまとめるページです。"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="../assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="menu-backdrop" data-menu-close hidden></div>
+
+    <aside class="site-menu" id="site-menu" aria-label="サイトメニュー" hidden>
+      <div class="site-menu__inner">
+        <div class="site-menu__header">
+          <p class="site-menu__eyebrow">Menu</p>
+          <button class="site-menu__close" type="button" data-menu-close aria-label="メニューを閉じる">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav class="site-menu__nav">
+          <a href="../">Top</a>
+          <a href="../about/">About</a>
+          <a href="../product/">Products</a>
+          <a href="./">Projects</a>
+          <a href="../news/">News</a>
+          <a href="../member/">Members</a>
+          <a href="../contact/">Contact</a>
+        </nav>
+
+        <div class="site-menu__panel">
+          <p class="site-menu__label">Projects</p>
+          <p class="site-menu__text">
+            技術局が関わる進行中の取り組みをまとめています。
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="section section--intro">
+        <div class="section__heading">
+          <p class="section__eyebrow">Projects</p>
+          <h1>進行中の取り組み</h1>
+          <p>
+            wplace沖ノ鳥島開発を中心に、技術局がどのような支援を行っているかを整理します。プロジェクトごとの詳細ページは、準備できたものから追加します。
+          </p>
+        </div>
+
+        <div class="feature">
+          <div class="feature__content">
+            <p class="section__eyebrow">Main Project</p>
+            <h2>wplace沖ノ鳥島開発</h2>
+            <p>
+              wplace上での表現を支えるため、情報整理、資料参照、サイト制作、Bot運用を横断して進めています。技術局の主要な活動の軸です。
+            </p>
+            <a class="button button--primary" href="../product/">関連する制作物を見る</a>
+          </div>
+
+          <div class="feature__stats" aria-label="プロジェクトの支援領域">
+            <div class="metric">
+              <span class="metric__label">Map</span>
+              <strong>地図・可視化</strong>
+            </div>
+            <div class="metric">
+              <span class="metric__label">Docs</span>
+              <strong>資料整備</strong>
+            </div>
+            <div class="metric">
+              <span class="metric__label">Ops</span>
+              <strong>運用支援</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Work Areas</p>
+          <h2>技術局が関わる領域</h2>
+        </div>
+
+        <div class="card-grid card-grid--three">
+          <article class="card">
+            <p class="card__eyebrow">01</p>
+            <h3>制作支援</h3>
+            <p>必要なページ、画像、資料への導線を整え、制作チームが動きやすい状態にします。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">02</p>
+            <h3>情報基盤</h3>
+            <p>ルール、ガイド、関連リンクを整理し、検索やBotから参照できるようにします。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">03</p>
+            <h3>運用改善</h3>
+            <p>繰り返し発生する作業を見つけ、Botやツールで無理なく続けられる形にします。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© Wplace沖ノ鳥島開発 技術局</p>
+    </footer>
+  </body>
+</html>

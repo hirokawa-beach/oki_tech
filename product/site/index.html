@@ -1,11 +1,112 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wplace沖ノ鳥島開発 技術局</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sites | 技術局</title>
+    <meta
+      name="description"
+      content="技術局メンバーが制作・運用するWebサイトをまとめた一覧ページです。"
+    />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <script src="../../assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="menu-backdrop" data-menu-close hidden></div>
+
+    <aside class="site-menu" id="site-menu" aria-label="サイトメニュー" hidden>
+      <div class="site-menu__inner">
+        <div class="site-menu__header">
+          <p class="site-menu__eyebrow">Menu</p>
+          <button class="site-menu__close" type="button" data-menu-close aria-label="メニューを閉じる">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav class="site-menu__nav">
+          <a href="../../">Top</a>
+          <a href="../../about/">About</a>
+          <a href="../">Products</a>
+          <a href="../../project/">Projects</a>
+          <a href="../../news/">News</a>
+          <a href="../../member/">Members</a>
+          <a href="../../contact/">Contact</a>
+        </nav>
+
+        <div class="site-menu__panel">
+          <p class="site-menu__label">Sites</p>
+          <p class="site-menu__text">
+            メンバーが制作・運用しているWebサイトを一覧化し、各サイトの概要ページへつなげます。
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="section section--intro">
+        <div class="section__heading">
+          <p class="section__eyebrow">Sites</p>
+          <h1>みんなが作ったサイト</h1>
+          <p>
+            技術局メンバーが制作・運用しているWebサイトを集めるページです。各カードの先に、目的、担当、公式URL、関連資料をまとめた個別ページを置いていきます。
+          </p>
+        </div>
+
+        <div class="link-grid">
+          <a class="link-card" href="./rc-tools/">
+            <span class="link-card__label">Tool Site</span>
+            <strong>rc-tools</strong>
+            <p>道路公社の作業を支援するツールサイトです。URL変換、座標確認、折れ線計画、ペイント量計算などを扱います。</p>
+          </a>
+
+          <a class="link-card" href="./okimap/">
+            <span class="link-card__label">Archive Map</span>
+            <strong>OkiMAP</strong>
+            <p>沖ノ鳥島周辺の変化を日付ごとに見られるアーカイブマップです。画像配信や閲覧体験を支えます。</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Page Structure</p>
+          <h2>追加するときの置き方</h2>
+          <p>
+            新しいサイトを追加するときは、この一覧にカードを増やし、`/product/site/site-id/` に概要ページを置く想定です。
+          </p>
+        </div>
+
+        <div class="card-grid card-grid--three">
+          <article class="card">
+            <p class="card__eyebrow">01</p>
+            <h3>概要</h3>
+            <p>サイトの目的、何ができるか、誰向けのものかを短くまとめます。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">02</p>
+            <h3>担当・関連</h3>
+            <p>制作したメンバー、関連プロジェクト、参照している資料への導線を置きます。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">03</p>
+            <h3>公式URL</h3>
+            <p>実際に使うサイト、リポジトリ、補足資料があれば個別ページからリンクします。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© Wplace沖ノ鳥島開発 技術局</p>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News | 技術局</title>
+    <meta
+      name="description"
+      content="技術局の更新情報、制作ログ、リリース予定をまとめるニュースページです。"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="../assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="menu-backdrop" data-menu-close hidden></div>
+
+    <aside class="site-menu" id="site-menu" aria-label="サイトメニュー" hidden>
+      <div class="site-menu__inner">
+        <div class="site-menu__header">
+          <p class="site-menu__eyebrow">Menu</p>
+          <button class="site-menu__close" type="button" data-menu-close aria-label="メニューを閉じる">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav class="site-menu__nav">
+          <a href="../">Top</a>
+          <a href="../about/">About</a>
+          <a href="../product/">Products</a>
+          <a href="../project/">Projects</a>
+          <a href="./">News</a>
+          <a href="../member/">Members</a>
+          <a href="../contact/">Contact</a>
+        </nav>
+
+        <div class="site-menu__panel">
+          <p class="site-menu__label">News</p>
+          <p class="site-menu__text">
+            技術局の更新情報や制作ログを時系列で掲載するページです。
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="section section--intro">
+        <div class="section__heading">
+          <p class="section__eyebrow">News</p>
+          <h1>更新情報と制作ログ</h1>
+          <p>
+            リリース、ページ追加、開発メモ、運用変更などをまとめます。現在は雛形として、掲載する情報の種類を置いています。
+          </p>
+        </div>
+
+        <div class="news-list">
+          <article class="news-item">
+            <time datetime="2026-05-01">2026.05.01</time>
+            <h3>下層ページの雛形を追加</h3>
+            <p>空だった主要ページに、既存デザインを使った下層ページ用の構成を追加しました。</p>
+          </article>
+
+          <article class="news-item">
+            <time datetime="2026-04-22">2026.04.22</time>
+            <h3>トップページの構成を公開</h3>
+            <p>技術局の活動領域、サイト内の主要導線、ニュース表示の基本形を用意しました。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Categories</p>
+          <h2>掲載予定の情報</h2>
+        </div>
+
+        <div class="card-grid card-grid--three">
+          <article class="card">
+            <p class="card__eyebrow">Release</p>
+            <h3>公開・更新</h3>
+            <p>ページやツールを公開したときの告知を掲載します。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Log</p>
+            <h3>制作ログ</h3>
+            <p>開発の進捗や設計の変更点を短く記録します。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Notice</p>
+            <h3>お知らせ</h3>
+            <p>運用変更、資料追加、連絡事項をまとめます。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© Wplace沖ノ鳥島開発 技術局</p>
+    </footer>
+  </body>
+</html>

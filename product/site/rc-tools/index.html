@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rc-tools | Sites | 技術局</title>
+    <meta
+      name="description"
+      content="wplaceの道路敷設・地図反映作業を支援するツール集 rc-tools の使い方と仕組みをまとめた詳細説明ページです。"
+    />
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+    <script src="../../../assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="menu-backdrop" data-menu-close hidden></div>
+
+    <aside class="site-menu" id="site-menu" aria-label="サイトメニュー" hidden>
+      <div class="site-menu__inner">
+        <div class="site-menu__header">
+          <p class="site-menu__eyebrow">Menu</p>
+          <button class="site-menu__close" type="button" data-menu-close aria-label="メニューを閉じる">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav class="site-menu__nav">
+          <a href="../../../">Top</a>
+          <a href="../../../about/">About</a>
+          <a href="../../">Products</a>
+          <a href="../../../project/">Projects</a>
+          <a href="../../../news/">News</a>
+          <a href="../../../member/">Members</a>
+          <a href="../../../contact/">Contact</a>
+        </nav>
+
+        <div class="site-menu__panel">
+          <p class="site-menu__label">rc-tools</p>
+          <p class="site-menu__text">
+            wplaceの道路敷設・地図反映作業を支援するツール集の使い方と計算の仕組みをまとめています。
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="section section--intro">
+        <div class="section__heading">
+          <p class="section__eyebrow">Site Detail</p>
+          <h1>rc-tools</h1>
+          <p>
+            rc-tools は、wplaceの道路敷設や地図反映作業を効率化するためのツール集です。道路地図URLと現地URLの変換、URLからの座標確認、折れ線計画、必要ペイント量、完成予定日の推定をまとめて扱えます。
+          </p>
+        </div>
+
+        <div class="feature">
+          <div class="feature__content">
+            <p class="section__eyebrow">Official Site</p>
+            <h2>座標を読み、計画を作り、作業量を見積もるためのツール集</h2>
+            <p>
+              wplaceのURLを貼り付けるだけで、内部の世界座標やチャンク座標へ変換し、道路作業に必要な位置情報や見積もりを出せます。普段は結果だけ見れば使えますが、詳細欄では計算に使った座標や補正値も確認できます。
+            </p>
+            <div class="site-actions">
+              <a class="button button--primary" href="https://rc-tools.wplaceoki.com/" target="_blank" rel="noopener">公式サイトへ</a>
+              <a class="button button--ghost" href="https://github.com/ultimate-1113/wplace-tools" target="_blank" rel="noopener">GitHubを見る</a>
+            </div>
+          </div>
+
+          <div class="feature__stats" aria-label="rc-tools の情報">
+            <div class="metric">
+              <span class="metric__label">Type</span>
+              <strong>Tool Site</strong>
+            </div>
+            <div class="metric">
+              <span class="metric__label">Owner</span>
+              <strong>ultimate_1113</strong>
+            </div>
+            <div class="metric">
+              <span class="metric__label">Domain</span>
+              <strong>rc-tools.wplaceoki.com</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Overview</p>
+          <h2>何を助けるサイトなのか</h2>
+          <p>
+            wplaceのURLには緯度経度が入っていますが、道路作業で本当に見たいのは、チャンク内の座標、2地点の差分、折れ点、残り作業量です。rc-tools はURLからそれらを読み替え、作業者が判断しやすい形に直します。
+          </p>
+        </div>
+
+        <div class="card-grid card-grid--three">
+          <article class="card">
+            <p class="card__eyebrow">Position</p>
+            <h3>位置を揃える</h3>
+            <p>緯度経度を世界座標、チャンク座標、タイル座標へ変換し、作業で共有しやすい座標にします。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Planning</p>
+            <h3>線を引く計画を作る</h3>
+            <p>始点と終点から折れ点や傾きを計算し、道路を引きやすい形に分解します。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Estimate</p>
+            <h3>作業量を見積もる</h3>
+            <p>必要ペイント数や進捗速度を計算し、いつ頃完成しそうかを見えるようにします。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Pages</p>
+          <h2>ツールの紹介</h2>
+        </div>
+
+        <div class="link-grid">
+          <a class="link-card" href="https://rc-tools.wplaceoki.com/ConvertUrl" target="_blank" rel="noopener">
+            <span class="link-card__label">URL Convert</span>
+            <strong>道路地図URL変換</strong>
+            <p>道路地図上のURLと、実際のwplace現地URLを相互に変換します。逆変換では候補が2つ出る場合があります。</p>
+          </a>
+
+          <a class="link-card" href="https://rc-tools.wplaceoki.com/urlCoordinates" target="_blank" rel="noopener">
+            <span class="link-card__label">Coordinates</span>
+            <strong>URL座標変換</strong>
+            <p>wplace URLの緯度・経度から、世界座標、チャンク座標、タイル座標を確認します。</p>
+          </a>
+
+          <a class="link-card" href="https://rc-tools.wplaceoki.com/planPolyline" target="_blank" rel="noopener">
+            <span class="link-card__label">Polyline</span>
+            <strong>折れ線プランナー</strong>
+            <p>始点と終点から、道路として引きやすい2本の傾きと折れ点を計算します。</p>
+          </a>
+
+          <a class="link-card" href="https://rc-tools.wplaceoki.com/paintCalc" target="_blank" rel="noopener">
+            <span class="link-card__label">Paint</span>
+            <strong>ペイント量計算</strong>
+            <p>2地点の距離差、道路幅、重ね幅から、必要なペイント数を見積もります。</p>
+          </a>
+
+          <a class="link-card" href="https://rc-tools.wplaceoki.com/finishPaint" target="_blank" rel="noopener">
+            <span class="link-card__label">Schedule</span>
+            <strong>完成予定日計算</strong>
+            <p>2つの日付と残りペイント数から、進捗速度、人数換算、完成予定日を推定します。</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Core Logic</p>
+          <h2>計算の仕組み</h2>
+          <p>
+            rc-tools の根本は、wplace URLの緯度経度を「画面上のピクセル座標」に置き換えることです。緯度経度のままでは、チャンク内の位置や2地点間のピクセル距離を扱いにくいため、Webメルカトルの世界座標へ変換してから計算します。
+          </p>
+        </div>
+
+        <div class="card-grid card-grid--three">
+          <article class="card">
+            <p class="card__eyebrow">01</p>
+            <h3>緯度経度を読む</h3>
+            <p>URLの <code>lat</code> と <code>lng</code> を取り出し、地球上の位置として解釈します。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">02</p>
+            <h3>世界座標へ変換</h3>
+            <p>Webメルカトルの式で、左上原点・右向きx・下向きyのピクセル座標へ変換します。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">03</p>
+            <h3>ローカル座標へ分解</h3>
+            <p>世界座標を4000px単位、1000px単位で割り、チャンクやタイル内の座標として表示します。</p>
+          </article>
+        </div>
+
+        <div class="card-grid">
+          <details class="card">
+            <summary><strong>詳細しくみ: 座標変換の根本</strong></summary>
+            <h3>Webメルカトルと世界座標</h3>
+            <p>
+              Webメルカトルは、多くのWeb地図で使われる投影法です。経度は横方向へほぼ線形に対応し、緯度は北極・南極に近づくほど大きく引き伸ばされます。wplaceのURLは緯度経度で地点を表しますが、作業上は「地図画像上の何px目か」のほうが扱いやすいため、ピクセル座標へ変換します。
+            </p>
+            <p>
+              rc-toolsでは、内部計算用のズームを <code>9</code> に固定しています。1チャンクを <code>4000px</code> とみなし、世界全体の幅を <code>SCALE = 4000 * 2^9 = 2048000px</code> として扱います。
+            </p>
+            <p>
+              緯度を <code>lat</code>、経度を <code>lng</code>、<code>sinLat = sin(lat * PI / 180)</code> とすると、世界座標は次の式で求めます。
+            </p>
+            <p>
+              <code>worldX = ((lng + 180) / 360) * SCALE</code><br />
+              <code>worldY = (0.5 - log((1 + sinLat) / (1 - sinLat)) / (4 * PI)) * SCALE</code>
+            </p>
+            <p>
+              逆に世界座標から緯度経度へ戻すときは、<code>lng = (worldX / SCALE) * 360 - 180</code> を使い、y方向はメルカトルの逆変換で緯度へ戻します。経度が180度を超えた場合は、-180度から180度の範囲へ正規化します。
+            </p>
+            <h3>チャンク座標・タイル座標・ローカル座標</h3>
+            <p>
+              世界座標は大きな連続座標なので、そのままだと作業者同士で共有しにくい値になります。そこでrc-toolsでは、世界座標を一定サイズで区切り、どの区画の中の何px目かとして表示します。
+            </p>
+            <p>
+              チャンク座標は <code>4000px</code> 単位です。<code>chunkX = floor(worldX / 4000)</code>、<code>chunkY = floor(worldY / 4000)</code> とし、チャンク内座標は <code>worldX</code> や <code>worldY</code> を4000で割った余りです。
+            </p>
+            <p>
+              タイル座標は <code>1000px</code> 単位です。考え方は同じで、1000で割った区画番号と、その区画内のローカル座標に分けます。実装では負方向の余りにも対応できるよう、<code>((px % modSize) + modSize) % modSize</code> の形で余りを正規化しています。
+            </p>
+            <h3>地図座標と世界座標を変換できる理由</h3>
+            <p>
+              道路地図は、wplace上の一部範囲を別の縮尺で切り出した地図として扱えます。つまり、地図上の点と現地の点の間には、原点のずれと縮尺差を使った対応関係があります。
+            </p>
+            <p>
+              rc-toolsでは、道路地図側の左上原点を基準点として持ち、道路地図の1チャンクを <code>13</code> として扱います。内部ズーム9なので、道路地図側の幅は <code>MAP_SCALE = 13 * 2^9 = 6656px</code> です。現地の世界全体は <code>2048000px</code> なので、比率は <code>SCALE / MAP_SCALE</code> になります。
+            </p>
+            <p>
+              地図URLから現地URLへ変換するときは、地図上の世界座標から道路地図原点を引き、その差分を <code>SCALE / MAP_SCALE</code> 倍して現地側の世界座標にします。ピクセルの左上ではなく中心を対応させるため、差分には <code>0.5px</code> を足してから拡大します。
+            </p>
+            <p>
+              厳密には、緯度経度をWebメルカトルの世界座標へ落とし込んでから計算しています。経度0地点は世界幅の中央にあり、スクリーン座標系では世界座標とローカル座標の間隔は一定です。そのため、x方向・y方向に0.5pxずらして中心を合わせても、地点間の距離やチャンク内の間隔そのものは変わりません。
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">URL Coordinates</p>
+          <h2>URL座標変換の使い方と仕組み</h2>
+          <p>
+            wplace URLを入力すると、その地点の世界座標、チャンク座標、タイル座標を表示します。地点の共有、道路計画の確認、他ツールの入力値確認に使えます。
+          </p>
+        </div>
+
+        <div class="card-grid card-grid--three">
+          <article class="card">
+            <p class="card__eyebrow">Use</p>
+            <h3>URLを貼る</h3>
+            <p><code>https://wplace.live/?lat=...&amp;lng=...</code> の形式のURLを入力します。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Result</p>
+            <h3>座標を見る</h3>
+            <p>世界座標、チャンク座標、タイル座標がそれぞれ表示されます。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Debug</p>
+            <h3>詳細を見る</h3>
+            <p>詳細欄では、生の世界座標やmap座標に近い補助表示を確認できます。</p>
+          </article>
+        </div>
+
+        <div class="card-grid">
+          <details class="card">
+            <summary><strong>詳細しくみ: URLから各座標を出す流れ</strong></summary>
+            <p>
+              まずURLから <code>lat</code> と <code>lng</code> を取り出します。どちらかが存在しない、または数値として読めない場合は、URL解析エラーになります。
+            </p>
+            <p>
+              次に、共通関数で緯度経度を世界座標へ変換します。世界座標は小数を含む値ですが、表示用の世界座標は <code>floor</code> で整数化します。チャンク座標とタイル座標は、同じ世界座標を <code>4000</code> または <code>1000</code> で区切って求めます。
+            </p>
+            <p>
+              チャンク表示の形は <code>[chunkX, chunkY] (localX, localY)</code> です。前半がどのチャンクか、後半がそのチャンク内の位置です。道路作業では、巨大な世界座標よりもこちらのほうが共有しやすくなります。
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Road Map URL</p>
+          <h2>道路地図URL変換の使い方と仕組み</h2>
+          <p>
+            道路地図上のURLと、実際のwplace現地URLを相互に変換します。道路地図で見ている地点を現地で開いたり、現地の地点が道路地図上のどこに対応するかを確認できます。
+          </p>
+        </div>
+
+        <div class="card-grid card-grid--three">
+          <article class="card">
+            <p class="card__eyebrow">Mode</p>
+            <h3>変換方向を選ぶ</h3>
+            <p>地図から現地へ変換するか、現地から地図へ変換するかを選びます。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Zoom</p>
+            <h3>ズーム値を決める</h3>
+            <p>出力するwplace URLのズーム値を指定できます。開いたときの見え方を調整するための値です。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Candidates</p>
+            <h3>候補を確認する</h3>
+            <p>現地から地図へ戻す場合、場所によっては右側・左側の2候補が出ます。</p>
+          </article>
+        </div>
+
+        <div class="card-grid">
+          <details class="card">
+            <summary><strong>詳細しくみ: 道路地図URL変換の流れ</strong></summary>
+            <h3>地図から現地へ変換する流れ</h3>
+            <p>
+              入力URLの緯度経度を道路地図側の世界座標に変換します。次に、その点が道路地図の左上原点からどれだけ離れているかを求めます。x方向は日付変更線付近で連続性が切れやすいため、地図原点より左側に見える場合は <code>MAP_SCALE</code> を足して、同じ地図上の連続した位置として扱います。
+            </p>
+            <p>
+              差分は <code>shiftedX - ORIGIN.worldX</code> と <code>mapWorldY - ORIGIN.worldY</code> です。ここへピクセル中心補正の <code>0.5</code> を足し、<code>SCALE / MAP_SCALE</code> 倍して現地側の世界座標を作ります。
+            </p>
+            <p>
+              最後に、その現地側の世界座標を緯度経度へ戻し、<code>https://wplace.live/?lat=...&amp;lng=...&amp;zoom=...</code> のURLとして出力します。
+            </p>
+            <h3>現地から道路地図へ戻す流れ</h3>
+            <p>
+              現地URLを世界座標に変換したあと、今度は縮小方向に変換します。<code>bx = floor(worldX * MAP_SCALE / SCALE)</code>、<code>by = floor(worldY * MAP_SCALE / SCALE)</code> として、現地側の位置を道路地図側のスケールへ縮めます。
+            </p>
+            <p>
+              その後、道路地図の原点を足し直して、道路地図上の世界座標に戻します。ただし、道路地図は日付変更線やインド付近の分岐をまたぐため、x方向には候補が1つまたは2つあります。実装では、インド西端・東端に相当する世界座標を境に、右側候補、左側候補、または両方を返します。
+            </p>
+            <p>
+              候補ごとに緯度経度へ戻し、道路地図の緯度範囲に入っているものだけを出力します。範囲外の場合は「入力座標は道路地図に対応しません」という扱いになります。
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Polyline Planner</p>
+          <h2>折れ線プランナーの使い方と仕組み</h2>
+          <p>
+            始点URLと終点URLから、道路として引きやすい折れ点を計算します。一直線で引きにくい斜め線を、扱いやすい傾きの2本に分けるための機能です。
+          </p>
+        </div>
+
+        <div class="card-grid card-grid--three">
+          <article class="card">
+            <p class="card__eyebrow">Input</p>
+            <h3>始点と終点を入れる</h3>
+            <p>道路を引きたい区間の始点URLと終点URLを貼り付けます。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Order</p>
+            <h3>折る順序を選ぶ</h3>
+            <p>自動、始点側を緩やかにする、始点側を急にする、の3種類から選べます。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Output</p>
+            <h3>折れ点を使う</h3>
+            <p>始点、折れ点、終点のチャンク座標と、wplaceで開けるリンクが出ます。</p>
+          </article>
+        </div>
+
+        <div class="card-grid">
+          <details class="card">
+            <summary><strong>詳細しくみ: 傾き候補と折れ点の決め方</strong></summary>
+            <p>
+              始点と終点を世界座標へ変換し、x方向の差分 <code>dx</code> とy方向の差分 <code>dy</code> を求めます。目的の傾きは <code>m = dy / dx</code> です。
+            </p>
+            <p>
+              ただし、任意の小数傾きは作業しにくいため、rc-toolsでは使いやすい傾きセットを用意しています。候補は <code>1/20</code> から <code>1/2</code>、<code>1</code>、<code>2</code> から <code>20</code> までです。
+            </p>
+            <p>
+              目的の傾きに最も近い候補を探し、ぴったりでなければ目的傾きを挟む2つの傾き <code>a</code> と <code>b</code> を使います。x方向の距離を <code>Na</code> と <code>Nb</code> に分け、<code>a * Na + b * Nb</code> が <code>dy</code> に近くなるようにします。
+            </p>
+            <p>
+              自動モードでは、傾き <code>a</code> を先に使う場合と、傾き <code>b</code> を先に使う場合の両方を試し、計画上の終点が本来の終点に近い方を採用します。詳細欄には、各区間の距離、世界座標、チャンク座標、終点誤差が出ます。
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Paint Calculator</p>
+          <h2>ペイント量計算の使い方と仕組み</h2>
+          <p>
+            道路を引く前に、だいたい何pxぶんのペイントが必要になるかを見積もる機能です。始点と終点のURLをもとに距離を出し、道路幅や重ね幅を加味して作業量を計算します。
+          </p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <p class="card__eyebrow">Use / Logic</p>
+            <h3>使い方と簡単な仕組み</h3>
+            <p>
+              まず、計算したい区間の2地点をwplaceで開き、それぞれのURLを入力します。次に、道路幅と重ね幅を指定します。ツールは2地点を世界座標へ変換し、x方向とy方向にどれだけ離れているかを求めます。
+            </p>
+            <p>
+              そのうえで、長い方向を道路の長さ、短い方向を斜めに進むことで増える重なり分として扱います。計算式は <code>(長い方向 - 1) * 道路幅 + 短い方向 * 重ね幅</code> です。日付変更線を跨ぐ可能性がある場合は、世界を短い側に回るかどうかを確認します。なお、傾きが1を跨ぐ道路では途中で長い方向と短い方向の扱いが入れ替わるため、この見積もりは使わない前提です。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Finish Date</p>
+          <h2>完成予定日計算の使い方と仕組み</h2>
+          <p>
+            進み具合がわかる2つの時点を比べて、このままのペースならいつ完成しそうかを見積もる機能です。残りペイント数を定期的に記録しておくと、作業速度の目安として使えます。
+          </p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <p class="card__eyebrow">Use / Logic</p>
+            <h3>使い方と簡単な仕組み</h3>
+            <p>
+              まず、ある時点の日付と残りペイント数を入力します。次に、別の時点の日付と残りペイント数を入力します。古い順に入力しなくても、ツール側で時刻の早い観測と遅い観測に並べ直します。
+            </p>
+            <p>
+              2つの観測の間で残りペイント数がどれだけ減ったかを、経過時間で割ることで、1分あたりの進捗を求めます。そのペースが続くと仮定し、新しい観測時点で残っている量を消化するまでの時間を足して完成予定日を出します。人数換算では、1人あたり <code>100 / 42 paint/min</code> を基準にしています。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Notes</p>
+          <h2>使うときの注意</h2>
+        </div>
+
+        <div class="card-grid card-grid--three">
+          <article class="card">
+            <p class="card__eyebrow">URL</p>
+            <h3>lat / lng が必要</h3>
+            <p>wplaceのURLに緯度と経度が入っていない場合、座標を読み取れません。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Range</p>
+            <h3>道路地図は範囲あり</h3>
+            <p>道路地図URL変換は、設定された道路地図の範囲内だけを対象にします。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Estimate</p>
+            <h3>見積もりは前提つき</h3>
+            <p>ペイント量や完成予定日は、入力時点の条件が続く前提の推定値として扱います。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Related</p>
+          <h2>関連ページ</h2>
+        </div>
+
+        <div class="link-grid">
+          <a class="link-card" href="../../../member/ultimate_1113/">
+            <span class="link-card__label">Member</span>
+            <strong>ultimate_1113</strong>
+            <p>rc-tools の制作・運用に関わるメンバー紹介ページです。</p>
+          </a>
+
+          <a class="link-card" href="../../database/okidev/sites/rc-tools/overview.md">
+            <span class="link-card__label">Database</span>
+            <strong>rc-tools overview</strong>
+            <p>データベース側に置いている概要資料です。</p>
+          </a>
+
+          <a class="link-card" href="../">
+            <span class="link-card__label">Sites</span>
+            <strong>サイト一覧へ戻る</strong>
+            <p>技術局メンバーが制作・運用しているサイト一覧です。</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© Wplace沖ノ鳥島開発 技術局</p>
+    </footer>
+  </body>
+</html>
