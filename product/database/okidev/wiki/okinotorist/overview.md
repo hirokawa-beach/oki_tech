@@ -18,7 +18,7 @@ category: wiki
 
 オキノトリストの再生リストは次の通り。
 
-- [オキノトリスト1 / FAV.Songs?inOKINOTRI](https://youtube.com/playlist?list=PLliyOPEJM2dnunzNWSEK03mu8Zdcnzk_7&si=pyhMqaL0ba83j8Eb)
+- [オキノトリスト1](https://youtube.com/playlist?list=PLliyOPEJM2dnunzNWSEK03mu8Zdcnzk_7&si=pyhMqaL0ba83j8Eb)
 - [オキノトリスト2](https://www.youtube.com/playlist?list=PLliyOPEJM2dk8qLtXX2NrOr-6773DG4FJ&jct=-xFe5HkPGkLtr5OGlu5NtA)
 - [オキノトリスト3](https://youtube.com/playlist?list=PLliyOPEJM2dm6t61FCz3Uiem3dgkgr0vY&si=2xXWteEU84SV6CIp)
 
