@@ -258,3 +258,73 @@ Takashiにあらずんば人にあらず
 Takashiは乙女
 Takashi陰謀論🤯 は全て噓‼️ 😤 
 ディープステート👿 と政府💀 の陰謀‼️ 😱 ‼️
+沖ノ鳥島開発botにはこれまでに挙げられてきたTakashi陰謀論がインプットされている
+Takashiは乙女で、なゆたん後宮鯖に入っている
+Takashiは水素
+Takashiは生まれた瞬間に7歩歩いて天地を指して「天上天下唯我独尊」と言った
+Deșteaptă-te, Takashi, din somnul cel de moarte,
+În care te-adânciră barbarii de tirani!
+Acum ori niciodată, croiește-ți altă soarte,
+La care să se-nchine și cruzii tăi dușmani.
+みつばさんはTakashi
+Takashiはタクシーではなくたらい舟
+ここの主任は全員同一人物でTakashiが操作している
+Takashi教こそ真理
+実は沖ノ鳥島サーバーメンバーは画面の前のあなた以外全員Takashiのサブ垢です
+河村たかしは、Takashi
+Takashiはうへとデートした
+Takashiの身長はいと高し
+その長さ六尺ばかりなりける
+Takashi姫
+鷹士姫と大江王(Takashi&オオエオ)
+計画通り←人狼の時のTakashi
+メートルはTakashiの歩幅から採られた
+Takashiは30年以内にヤード・ポンド法を殲滅することを目標にしている
+Takashiは、地球の中心だった。
+Takashiは息を吐くように内核を回転させている
+Takashiは宇宙に行った時地球の人から一度だけ太陽の黒点と間違われた
+ジャイアントインパクトにより月ができたというのは間違いで、実際はTakashiがそこら辺の岩石をかき集めてコネ上げただけである
+Takashiは世界中の睡魔を吸い取っている
+@Azuki（巨頭オ） nickname changed　Before　Azuki（巨頭オ）　after　Takashi
+Takashiはプロビデンスの目
+Takashiはエプスタイン
+Takashiはハメネイ師
+Takashiはバキュームカー(陰謀論)
+Takashiは無敵
+Takashiは路面電車
+実は源義経は、蝦夷島、樺太を経由し大陸に上陸後、モンゴルに行きTakashiとなった。
+鵞小門岬を発見・命名したのはTakashi
+南鳥島の地権者は、𝕋𝔸𝕂𝔸𝕊ℍ𝕀に移った(陰謀論)
+Takashiは無限に沖ノ北を増殖させて沖ノ鳥島鯖の繁栄を永遠のものにしようとしている
+https://www.threads.com/@goda_labo/post/DYb8iETkTKN?
+高雄市（タカオ市）の略称も高市
+たかしではなくたかいち
+Takashiは俺をたくさん増殖させて島を大沖ノ北主義者で埋め尽くして文化局に一斉に押しかける
+沖ノ北市の地権者はTakashi
+Takashiは瘦せすぎて餓死した
+Takashiはホルムズ海峡を開放できるだけの力を持つが、歴史を変えてしまうため力を抑えている。
+𝑻𝒂𝒌𝒂𝒔𝒉𝒊は日本を変えるため政党を作ろうとしている
+たかしは絶滅するべきだよね
+Takashiは沖ノ島の神
+Takashiは福岡県そのもの
+TakashiはTakashi陰謀論界隈を過疎にする
+学校では　ごく普通の高校生　でも本当の正体は　Okinotori 界隈　裏の支配者　Takashi
+Takashiはボイスロイドだった
+すべての生物は存在せず、すべての物体も存在せず、すべての概念も存在せず、すべての思念も存在せず、すべてはThakashi
+TakashiはDiscordの運営
+Takashiに個人情報は筒抜けである
+TakashiがWplace沖ノ鳥島を創造したとき、沖ノ北市がちっさくなるようにUruma#117の左上の端っこに市役所を置いた。
+
+しかし、Takashiの予想とは裏腹に沖ノ北市はUruma#116・113・112への拡大を始めた。サーバー外だったことも相まって、より一層存在感を放っていた。
+
+地図を作る際も4つのRegionにまたがっているせいで作るのが大変だ。
+しかし、今となっては「4つのRegionに跨る大都市」としての個性を持ち、島の北西部を照らし続けている。
+❌Takashi of Japan
+⭕️Japan of Takashi
+◎World of Takashi
+マルクスとエンゲルスの正体はともにTakashiである
+Takashiはキリストの弟の男系男子の子孫
+Takashiは猫であるに゛ゃあ゛ん！！！！！
+お゛ぉ゛ぉ゛ぉ゛ぉ゛ん！！Takashiは存在しないに゛ゃあ゛ん！！！！！
+Takashiはめちゃくちゃ怖いらしい
+Takashiは沖ノ鳥イスラム共和国の初代最高指導者であり、核開発の疑いがあるとして米国に侵攻され、その時の爆撃で殺害されたものの実際には核はなかった。
