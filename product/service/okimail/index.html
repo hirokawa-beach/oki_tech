@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OkiMail | Services | 技術局</title>
+    <meta
+      name="description"
+      content="受信したメールをDiscordのDMへ転送するサービス OkiMail の概要、利用方法、関連ページをまとめた説明ページです。"
+    />
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+    <script src="../../../assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="menu-backdrop" data-menu-close hidden></div>
+
+    <aside class="site-menu" id="site-menu" aria-label="サイトメニュー" hidden>
+      <div class="site-menu__inner">
+        <div class="site-menu__header">
+          <p class="site-menu__eyebrow">Menu</p>
+          <button class="site-menu__close" type="button" data-menu-close aria-label="メニューを閉じる">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav class="site-menu__nav">
+          <a href="../../../">Top</a>
+          <a href="../../../about/">About</a>
+          <a href="../../">Products</a>
+          <a href="../../../project/">Projects</a>
+          <a href="../../../news/">News</a>
+          <a href="../../../member/">Members</a>
+          <a href="../../../contact/">Contact</a>
+        </nav>
+
+        <div class="site-menu__panel">
+          <p class="site-menu__label">OkiMail</p>
+          <p class="site-menu__text">
+            受信したメールをDiscordのDMへ転送するサービスです。
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="section section--intro">
+        <div class="section__heading">
+          <p class="section__eyebrow">Service Detail</p>
+          <h1>OkiMail</h1>
+          <p>
+            OkiMailは、利用者に発行したメールアドレスで受信したメールをDiscordのDMへ転送するサービスです。Discord Botによる転送に加え、公開ページから発行申請や問い合わせができます。
+          </p>
+        </div>
+
+        <div class="feature">
+          <div class="feature__content">
+            <p class="section__eyebrow">Official Site</p>
+            <h2>メールをDiscordで受け取る</h2>
+            <p>
+              メール本文、元のメールファイル、添付ファイルをDiscordのDMへ転送します。アドレスの発行は運営者が申請内容を確認したうえで手動対応します。
+            </p>
+            <a class="button button--primary" href="https://mail.wplaceoki.com/" target="_blank" rel="noopener">公式サイトへ</a>
+          </div>
+
+          <div class="feature__stats" aria-label="OkiMailの情報">
+            <div class="metric">
+              <span class="metric__label">Type</span>
+              <strong>Mail Service</strong>
+            </div>
+            <div class="metric">
+              <span class="metric__label">Operator</span>
+              <strong>技術局</strong>
+            </div>
+            <div class="metric">
+              <span class="metric__label">Domain</span>
+              <strong>mail.wplaceoki.com</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Overview</p>
+          <h2>OkiMailでできること</h2>
+        </div>
+
+        <div class="card-grid card-grid--three">
+          <article class="card">
+            <p class="card__eyebrow">Receive</p>
+            <h3>メールを受信する</h3>
+            <p>発行されたOkiMailアドレス宛てのメールを受信し、本文と添付ファイルを処理します。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Forward</p>
+            <h3>Discordへ転送する</h3>
+            <p>受信したメールを利用者のDiscordユーザーIDに紐づくDMへ自動転送します。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Control</p>
+            <h3>受信を管理する</h3>
+            <p>Discordコマンドを使い、送信元メールアドレス単位でブロックと解除ができます。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Flow</p>
+          <h2>利用の流れ</h2>
+        </div>
+
+        <div class="card-grid card-grid--three">
+          <article class="card">
+            <p class="card__eyebrow">01</p>
+            <h3>発行を申請する</h3>
+            <p>指定されたDiscordサーバー内の窓口、またはOkiMail公式サイトから発行を申請します。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">02</p>
+            <h3>アドレスを受け取る</h3>
+            <p>運営者が申請内容を確認し、メールアドレスとDiscordユーザーIDを手動で紐づけます。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">03</p>
+            <h3>DMでメールを受け取る</h3>
+            <p>発行後は、OkiMailが受信したメールをDiscordのDMへ自動転送します。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Related</p>
+          <h2>関連ページ</h2>
+        </div>
+
+        <div class="link-grid">
+          <a class="link-card" href="https://mail.wplaceoki.com/contact/" target="_blank" rel="noopener">
+            <span class="link-card__label">Application</span>
+            <strong>発行申請と問い合わせ</strong>
+            <p>Discordでログインし、メールアドレスの発行申請や問い合わせを送信できます。</p>
+          </a>
+
+          <a class="link-card" href="https://mail.wplaceoki.com/terms/" target="_blank" rel="noopener">
+            <span class="link-card__label">Terms</span>
+            <strong>OkiMail利用規約</strong>
+            <p>サービスの利用条件、禁止事項、利用制限を確認できます。</p>
+          </a>
+
+          <a class="link-card" href="https://mail.wplaceoki.com/privacy/" target="_blank" rel="noopener">
+            <span class="link-card__label">Privacy</span>
+            <strong>プライバシーポリシー</strong>
+            <p>取得情報、利用目的、保存期間、外部サービスの利用について掲載しています。</p>
+          </a>
+
+          <a class="link-card" href="../../database/okidev/bots/okimail/overview.md">
+            <span class="link-card__label">Database</span>
+            <strong>okimail overview</strong>
+            <p>コマンド、制限、トラブル時の対応をまとめた利用者向け資料です。</p>
+          </a>
+
+          <a class="link-card" href="../../../member/ultimate_1113/">
+            <span class="link-card__label">Member</span>
+            <strong>ultimate_1113</strong>
+            <p>OkiMailの制作と運用に関わるメンバー紹介ページです。</p>
+          </a>
+
+          <a class="link-card" href="../">
+            <span class="link-card__label">Services</span>
+            <strong>サービス一覧へ戻る</strong>
+            <p>技術局が運用するサービスとBotの一覧です。</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© Wplace沖ノ鳥島開発 技術局</p>
+    </footer>
+  </body>
+</html>
