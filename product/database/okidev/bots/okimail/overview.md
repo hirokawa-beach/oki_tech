@@ -30,6 +30,7 @@ OkiMail は、発行したメールアドレスに届いたメールを Discord 
 - [OkiMail ホームページ](https://mail.wplaceoki.com/)
 - [OkiMail 利用規約](https://mail.wplaceoki.com/terms/)
 - [OkiMail プライバシーポリシー](https://mail.wplaceoki.com/privacy/)
+- [OkiMail ユーザー設定](https://mail.wplaceoki.com/account/)
 
 ## ブロック機能
 
@@ -40,6 +41,10 @@ OkiMail には、送信元アドレス単位のブロック機能があります
 ブロック機能はユーザー ID 単位で管理されます。
 
 そのため、複数の OkiMail アドレスを所持している場合でも、同一ユーザーとして一括でブロックが適用されます。
+
+ブロック設定は、Discord の `/block` と `/unblock` コマンドのほか、[OkiMail ユーザー設定](https://mail.wplaceoki.com/account/)からも確認、追加、解除できます。
+
+ユーザー設定では、ログイン中の Discord ユーザー ID に紐づく OkiMail アドレスの一覧も確認できます。
 
 ## 重要な位置づけ
 
@@ -116,6 +121,10 @@ OkiMail Bot のユーザー ID は `1446422325594554482` です。
 ## コマンド
 
 OkiMail は、送信元アドレス単位のブロック機能を備えています。
+
+ブロック設定は、Discord コマンドと [OkiMail ユーザー設定](https://mail.wplaceoki.com/account/)で共通です。
+
+どちらから追加または解除しても、同じ設定に反映されます。
 
 ブロックはユーザー ID 単位で管理されるため、複数の OkiMail アドレスを持っていても、同一ユーザーとして一括で適用されます。
 
