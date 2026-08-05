@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OkiMusic | Services | 技術局</title>
+    <meta
+      name="description"
+      content="OkiMusicの楽曲をDiscordのボイスチャンネルで再生し、Discordから投稿できるBotと音楽サービスの紹介ページです。"
+    />
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+    <script src="../../../assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="menu-backdrop" data-menu-close hidden></div>
+
+    <aside class="site-menu" id="site-menu" aria-label="サイトメニュー" hidden>
+      <div class="site-menu__inner">
+        <div class="site-menu__header">
+          <p class="site-menu__eyebrow">Menu</p>
+          <button class="site-menu__close" type="button" data-menu-close aria-label="メニューを閉じる">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav class="site-menu__nav">
+          <a href="../../../">Top</a>
+          <a href="../../../about/">About</a>
+          <a href="../../">Products</a>
+          <a href="../../../project/">Projects</a>
+          <a href="../../../news/">News</a>
+          <a href="../../../member/">Members</a>
+          <a href="../../../contact/">Contact</a>
+        </nav>
+
+        <div class="site-menu__panel">
+          <p class="site-menu__label">OkiMusic</p>
+          <p class="site-menu__text">
+            OkiMusicの楽曲をDiscordのVCで再生し、Discordから投稿できるBotです。
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="section section--intro">
+        <div class="section__heading">
+          <p class="section__eyebrow">Service Detail</p>
+          <h1>OkiMusic</h1>
+          <p>
+            OkiMusicは、公開曲やロール限定曲をWebで聴ける音楽サービスです。Discord Botから曲やプレイリストをVCで再生し、許可された利用者は音声ファイルを投稿できます。
+          </p>
+        </div>
+
+        <div class="feature">
+          <div class="feature__content">
+            <p class="section__eyebrow">Official Site</p>
+            <h2>WebとDiscordをつなぐ音楽サービス</h2>
+            <p>
+              Webでは楽曲の検索、再生、プレイリスト作成、共有に対応しています。DiscordではVC再生とアップロードをコマンドから操作できます。
+            </p>
+            <a class="button button--primary" href="https://music.wplaceoki.com/" target="_blank" rel="noopener">公式サイトへ</a>
+          </div>
+
+          <div class="feature__stats" aria-label="OkiMusicの情報">
+            <div class="metric">
+              <span class="metric__label">Type</span>
+              <strong>Music Bot</strong>
+            </div>
+            <div class="metric">
+              <span class="metric__label">Login</span>
+              <strong>Discord</strong>
+            </div>
+            <div class="metric">
+              <span class="metric__label">Domain</span>
+              <strong>music.wplaceoki.com</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Overview</p>
+          <h2>OkiMusicでできること</h2>
+        </div>
+
+        <div class="card-grid card-grid--three">
+          <article class="card">
+            <p class="card__eyebrow">Listen</p>
+            <h3>Webで曲を聴く</h3>
+            <p>公開曲をログインせずに再生できます。Discordでログインすると、所持ロールに応じた限定曲も表示されます。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Voice</p>
+            <h3>VCで再生する</h3>
+            <p>曲、プレイリスト、共有URLをキューへ追加し、一時停止、スキップ、リピートなどをDiscordから操作できます。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Upload</p>
+            <h3>Discordから投稿する</h3>
+            <p>許可された利用者は、音声ファイル、曲情報、歌詞カード、公開状態を指定してDiscordから投稿できます。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Commands</p>
+          <h2>主なDiscordコマンド</h2>
+        </div>
+
+        <div class="card-grid card-grid--three">
+          <article class="card">
+            <p class="card__eyebrow">Playback</p>
+            <h3>/play</h3>
+            <p>曲名、アーティスト名、プレイリスト名から検索するか、共有URLを指定して再生キューへ追加します。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Queue</p>
+            <h3>/queueと/now</h3>
+            <p>再生キューと現在再生中の曲を確認します。停止、スキップ、リピートなどの操作にも対応しています。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Contribution</p>
+            <h3>/upload</h3>
+            <p>音声ファイルと曲情報を指定し、著作権に関する注意事項を確認してOkiMusicへ投稿します。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Related</p>
+          <h2>関連ページ</h2>
+        </div>
+
+        <div class="link-grid">
+          <a class="link-card" href="https://music.wplaceoki.com/" target="_blank" rel="noopener">
+            <span class="link-card__label">Web App</span>
+            <strong>OkiMusic公式サイト</strong>
+            <p>楽曲の再生、検索、プレイリスト作成、共有、アップロードができます。</p>
+          </a>
+
+          <a class="link-card" href="../../database/okidev/bots/okimusic/overview.md">
+            <span class="link-card__label">Bot Guide</span>
+            <strong>OkiMusic Bot概要</strong>
+            <p>Discordコマンド、公開状態、対応音声形式、利用上の注意をまとめています。</p>
+          </a>
+
+          <a class="link-card" href="../../database/okidev/sites/okimusic/overview.md">
+            <span class="link-card__label">Web Guide</span>
+            <strong>OkiMusic Web概要</strong>
+            <p>Web版の検索、再生、アップロード、公開範囲について説明しています。</p>
+          </a>
+
+          <a class="link-card" href="../">
+            <span class="link-card__label">Services</span>
+            <strong>サービス一覧へ戻る</strong>
+            <p>技術局が運用するサービスとBotの一覧です。</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© Wplace沖ノ鳥島開発 技術局</p>
+    </footer>
+  </body>
+</html>
