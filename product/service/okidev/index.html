@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OkiDev | Services | 技術局</title>
+    <meta
+      name="description"
+      content="wplace用オーバーレイの生成と、資料検索、履歴会話、翻訳、要約、コード相談に対応するOkiDev Botの紹介ページです。"
+    />
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+    <script src="../../../assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="menu-backdrop" data-menu-close hidden></div>
+
+    <aside class="site-menu" id="site-menu" aria-label="サイトメニュー" hidden>
+      <div class="site-menu__inner">
+        <div class="site-menu__header">
+          <p class="site-menu__eyebrow">Menu</p>
+          <button class="site-menu__close" type="button" data-menu-close aria-label="メニューを閉じる">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav class="site-menu__nav">
+          <a href="../../../">Top</a>
+          <a href="../../../about/">About</a>
+          <a href="../../">Products</a>
+          <a href="../../../project/">Projects</a>
+          <a href="../../../news/">News</a>
+          <a href="../../../member/">Members</a>
+          <a href="../../../contact/">Contact</a>
+        </nav>
+
+        <div class="site-menu__panel">
+          <p class="site-menu__label">OkiDev</p>
+          <p class="site-menu__text">
+            オーバーレイ生成とAIによる資料参照をDiscordから利用できるBotです。
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="section section--intro">
+        <div class="section__heading">
+          <p class="section__eyebrow">Service Detail</p>
+          <h1>OkiDev</h1>
+          <p>
+            OkiDevは、画像からwplace用のオーバーレイを生成し、登録済みのサーバー資料を参照して質問へ回答するDiscord Botです。翻訳、要約、履歴会話、コード相談にも対応しています。
+          </p>
+        </div>
+
+        <div class="feature">
+          <div class="feature__content">
+            <p class="section__eyebrow">Discord Bot</p>
+            <h2>制作と資料確認をDiscordで支援</h2>
+            <p>
+              `/make overlay`で.wplaceファイルを生成し、`/ai`で用途別の文章処理を実行します。AIによる回答は、利用者が原資料を確認できるよう参照元を表示します。
+            </p>
+            <a class="button button--primary" href="../../database/okidev/bots/okidev/overview.md">利用ガイドを見る</a>
+          </div>
+
+          <div class="feature__stats" aria-label="OkiDevの情報">
+            <div class="metric">
+              <span class="metric__label">Type</span>
+              <strong>Utility Bot</strong>
+            </div>
+            <div class="metric">
+              <span class="metric__label">Runtime</span>
+              <strong>Cloudflare Workers</strong>
+            </div>
+            <div class="metric">
+              <span class="metric__label">Commands</span>
+              <strong>/make /ai</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Overview</p>
+          <h2>OkiDevでできること</h2>
+        </div>
+
+        <div class="card-grid card-grid--three">
+          <article class="card">
+            <p class="card__eyebrow">Overlay</p>
+            <h3>オーバーレイを作る</h3>
+            <p>画像とwplace URLを指定し、配置情報を含む.wplaceファイルをDiscordで生成します。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Knowledge</p>
+            <h3>サーバー資料を調べる</h3>
+            <p>登録済み資料から質問に関連する内容を検索し、参照元を示しながら回答します。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">AI</p>
+            <h3>文章と画像を処理する</h3>
+            <p>文章、Discordメッセージ、画像の翻訳と要約に加え、履歴会話やコード相談を利用できます。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Commands</p>
+          <h2>主なDiscordコマンド</h2>
+        </div>
+
+        <div class="card-grid card-grid--three">
+          <article class="card">
+            <p class="card__eyebrow">Create</p>
+            <h3>/make overlay</h3>
+            <p>PNG、JPEG、GIF、WebPの画像から、指定したwplace座標へ配置するオーバーレイを生成します。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Search</p>
+            <h3>/ai ask</h3>
+            <p>サーバーのルールや案内など、AI Searchへ登録された資料を検索して質問に回答します。</p>
+          </article>
+
+          <article class="card">
+            <p class="card__eyebrow">Assist</p>
+            <h3>/ai chat</h3>
+            <p>利用者ごとの履歴を使って会話します。必要な場合だけ資料検索を有効にできます。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <p class="section__eyebrow">Related</p>
+          <h2>関連ページ</h2>
+        </div>
+
+        <div class="link-grid">
+          <a class="link-card" href="../../database/okidev/bots/okidev/overview.md">
+            <span class="link-card__label">Bot Guide</span>
+            <strong>OkiDev Bot利用ガイド</strong>
+            <p>コマンド、入力項目、資料検索の範囲、AI利用時の注意をまとめています。</p>
+          </a>
+
+          <a class="link-card" href="../">
+            <span class="link-card__label">Services</span>
+            <strong>サービス一覧へ戻る</strong>
+            <p>技術局が運用するサービスとBotの一覧です。</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© Wplace沖ノ鳥島開発 技術局</p>
+    </footer>
+  </body>
+</html>
