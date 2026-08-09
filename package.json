@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "ai-search:sitemap": "node scripts/generate-ai-search-sitemap.mjs",
+    "test": "node scripts/generate-ai-search-sitemap.mjs --check"
+  },
+  "devDependencies": {
+    "wrangler": "^4.88.0"
+  }
+}

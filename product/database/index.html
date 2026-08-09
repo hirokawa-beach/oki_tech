@@ -61,7 +61,7 @@
           <p class="section__eyebrow">Database</p>
           <h1>AI Search が参照する公開資料</h1>
           <p>
-            R2 と同じ key 構成で資料を置き、Gemma4 の回答末尾に出る参照元リンクから直接確認できるようにしています。
+            公開しているMarkdown資料をAI Searchが直接クロールし、回答末尾に出る参照元リンクから同じ資料を確認できるようにしています。
           </p>
         </div>
 
@@ -273,12 +273,12 @@
       <section class="section section--cta">
         <div class="cta">
           <div>
-            <p class="section__eyebrow">R2 Key Policy</p>
-            <h2>公開URLとR2ストレージのパスを一致させる。</h2>
+            <p class="section__eyebrow">Crawler Source Policy</p>
+            <h2>公開資料をそのままAI Searchの正本にする。</h2>
             <p>
               例: <code>okidev/rules/basic/overview.md</code> は
               <code>https://tech.wplaceoki.com/product/database/okidev/rules/basic/overview.md</code>
-              として参照できます。
+              として公開され、AI Searchも同じURLから取得します。
             </p>
           </div>
           <a class="button button--primary" href="../">Productsへ</a>
