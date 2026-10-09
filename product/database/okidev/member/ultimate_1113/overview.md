@@ -1,7 +1,7 @@
 # ultimate_1113（アルティメット）
 
 source: member-page-and-user-provided
-updated: 2026-05-03
+updated: 2026-10-09
 category: member
 
 ## 概要
@@ -64,15 +64,27 @@ https://rc-tools.wplaceoki.com/
 
 ### 沖ノ鳥島開発bot
 
-沖ノ鳥島開発botは、Gemma4やOverlay Forgeなど、制作やDiscord内での情報整理を補助する機能を提供するBotである。
+沖ノ鳥島開発bot（OkiDev）は、wplace用オーバーレイ生成と、資料検索付き回答、翻訳、要約、コード支援、履歴会話を提供するBotである。
+
+公開資料の検索と参照元表示に対応し、翻訳と要約にはMac上のAFMとWorkers AIを使う構成も導入している。
 
 rc-toolsやOkiMailと同じく、Cloudflare Workersを使って構築している。
 
 ### OkiMail
 
-OkiMailは、発行したメールアドレスに届いたメールをDiscordのDMに転送するBotである。
+OkiMailは、発行したメールアドレスに届いたメールをDiscordのDMへ転送し、WebとDiscordからメールを送信できるサービスである。
 
 wplaceoki.comのドメインを使い、メールアドレス発行と転送の仕組みを提供している。
+
+Webサイトでは、ユーザー設定、HTMLメール、予約送信、問い合わせ、端末内で処理するemlビューアーも提供している。
+
+### OkiMusic
+
+OkiMusicは、Discordログインとロール限定公開に対応する音楽サービスである。
+
+Webでは楽曲投稿、歌詞カード、プレイリスト、共有を提供し、Discord BotではVC再生と楽曲投稿を扱う。
+
+対応環境ではSpotifyやYouTubeのURLを使ったVC再生と、AIによる利用者代行にも対応している。
 
 ### OkiMAP支援
 

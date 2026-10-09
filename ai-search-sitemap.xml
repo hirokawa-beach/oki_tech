@@ -69,6 +69,10 @@
     <changefreq>hourly</changefreq>
   </url>
   <url>
+    <loc>https://tech.wplaceoki.com/product/database/okidev/sites/okimail/overview.md</loc>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
     <loc>https://tech.wplaceoki.com/product/database/okidev/sites/okimap/overview.md</loc>
     <changefreq>hourly</changefreq>
   </url>
