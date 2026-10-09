@@ -1,7 +1,7 @@
 # OkiMusic Bot
 
 source: okimusic-service
-updated: 2026-08-05
+updated: 2026-10-09
 category: bot
 public_url: https://music.wplaceoki.com/
 
@@ -11,7 +11,7 @@ OkiMusic Bot は、OkiMusic の楽曲を Discord のボイスチャンネルで�
 
 曲やプレイリストを再生キューへ追加し、一時停止、再開、スキップ、リピートなどを Discord のコマンドで操作できます。
 
-OkiMusic の公式サイトでは、公開曲の再生、Discord ロールに応じた限定曲の表示、プレイリストの作成、共有 URL の発行などができます。
+Web 版の操作は、[OkiMusic Web サービス概要](../../sites/okimusic/overview.md)を参照してください。
 
 公式サイト：
 
@@ -21,6 +21,7 @@ https://music.wplaceoki.com/
 
 - OkiMusic に登録された曲をボイスチャンネルで再生する
 - プレイリストや共有 URL の曲を再生キューへ追加する
+- Spotify や YouTube の対応 URL を使って VC で再生する
 - 再生の一時停止、再開、スキップ、停止を行う
 - 現在の曲と再生キューを確認する
 - 曲単位またはキュー全体のリピートを設定する
@@ -45,10 +46,18 @@ Bot がすでにボイスチャンネルへ参加している場合、再生を�
 曲、プレイリスト、または共有 URL を再生キューへ追加します。
 
 ```text
-/play item:<曲、プレイリスト、共有URL> [private:<表示設定>]
+/play item:<曲、プレイリスト、共有URL、SpotifyまたはYouTube URL> [private:<表示設定>]
 ```
 
 `item` には、曲名、アーティスト名、プレイリスト名、または OkiMusic の共有 URL を指定できます。
+
+外部 URL 再生が有効な環境では、Spotify の曲、アルバム、プレイリストと、YouTube の動画、プレイリストの URL にも対応します。
+
+外部 URL は VC 再生のために受け付けるもので、OkiMusic の楽曲ライブラリへ投稿する操作ではありません。
+
+Spotify の URL では曲情報をもとに YouTube の対応候補を探して再生するため、Spotify の音源そのものを再生するわけではありません。
+
+再生サーバーや外部サービスの状況によって、受付後に再生できない場合があります。
 
 検索候補には、実行した利用者が閲覧できる曲とプレイリストだけが表示されます。
 
